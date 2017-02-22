@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/cgrLEoQhL>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamLEoQh> .
+
+<http://purl.org/NET/rdfchess/id/gamLEoQh>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "London^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "London^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karpov, Anatoly^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamLEoQhLV> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamLEoQhLV> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamLEoQhLV> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "E11^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrLEoQhL> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Vaganian, Rafael A^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamLEoQhLV>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "d5^^xsd:string" , "Bxd2+^^xsd:string" , "Bd2^^xsd:string" , "Qxc5^^xsd:string" , "Nc3^^xsd:string" , "Ne4^^xsd:string" , "Be8^^xsd:string" , "Qc2^^xsd:string" , "dxc4^^xsd:string" , "Bd7^^xsd:string" , "e3^^xsd:string" , "Qxd2^^xsd:string" , "e6^^xsd:string" , "dxc5^^xsd:string" , "O-O^^xsd:string" , "c5^^xsd:string" , "Qe7^^xsd:string" , "Nf3^^xsd:string" , "Rfd1^^xsd:string" , "Rc1^^xsd:string" , "d4^^xsd:string" , "Nf6^^xsd:string" , "Nc6^^xsd:string" , "Bb4+^^xsd:string" , "Rd8^^xsd:string" , "a3^^xsd:string" , "Bxc4^^xsd:string" , "c4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamLEoQhLV> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Vaganian, Rafael A^^xsd:string" , "Karpov, Anatoly^^xsd:string" .

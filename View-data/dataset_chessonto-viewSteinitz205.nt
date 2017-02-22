@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamT3ixM> .
+
+<http://purl.org/NET/rdfchess/id/hmgamT3ixM2x>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Rxb2^^xsd:string" , "axb3^^xsd:string" , "Qxb2^^xsd:string" , "b6^^xsd:string" , "Bd6^^xsd:string" , "f5^^xsd:string" , "Nxe6^^xsd:string" , "Nc3^^xsd:string" , "b3^^xsd:string" , "d5^^xsd:string" , "Bb2^^xsd:string" , "d4^^xsd:string" , "Qxc3^^xsd:string" , "Nc6^^xsd:string" , "Nxb2^^xsd:string" , "O-O^^xsd:string" , "g6^^xsd:string" , "Qh6^^xsd:string" , "Be2^^xsd:string" , "Ng5^^xsd:string" , "c4^^xsd:string" , "Qe5^^xsd:string" , "e3^^xsd:string" , "Qc6^^xsd:string" , "Rc1^^xsd:string" , "Bb7^^xsd:string" , "Nf3^^xsd:string" , "Nb4^^xsd:string" , "Bh5+^^xsd:string" , "Qf4^^xsd:string" , "Nxh5^^xsd:string" , "Qc4^^xsd:string" , "Qd7^^xsd:string" , "Qxh5+^^xsd:string" , "dxc4^^xsd:string" , "Be7^^xsd:string" , "Rc2^^xsd:string" , "Nf6^^xsd:string" , "cxb3^^xsd:string" , "Nd3^^xsd:string" , "e6^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamT3ixM2x> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Heral, Josef^^xsd:string" , "Steinitz, William^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgrT3ixM2>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamT3ixM>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Vienna^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Vienna^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Steinitz, William^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamT3ixM2x> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamT3ixM2x> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamT3ixM2x> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "A10^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrT3ixM2> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "0-1^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Heral, Josef^^xsd:string" .

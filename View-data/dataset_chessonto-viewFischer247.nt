@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/gamuajeK>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Buenos Aires^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Buenos Aires^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Fischer, Robert James^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamuajeKj9> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamuajeKj9> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamuajeKj9> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "C64^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgruajeKj> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Evans, Larry Melvyn^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamuajeK> .
+
+<http://purl.org/NET/rdfchess/id/cgruajeKj>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamuajeKj9>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "h6^^xsd:string" , "Nc3^^xsd:string" , "Rfe8^^xsd:string" , "O-O^^xsd:string" , "exd4^^xsd:string" , "d5^^xsd:string" , "Qxb4^^xsd:string" , "Qb4^^xsd:string" , "d4^^xsd:string" , "Bb5^^xsd:string" , "b4^^xsd:string" , "Nxc6^^xsd:string" , "Nc6^^xsd:string" , "e4^^xsd:string" , "cxd4^^xsd:string" , "a5^^xsd:string" , "Bc5^^xsd:string" , "cxd5^^xsd:string" , "Qd2^^xsd:string" , "Bb6^^xsd:string" , "Rae8^^xsd:string" , "Nge7^^xsd:string" , "e5^^xsd:string" , "bxc6^^xsd:string" , "axb4^^xsd:string" , "Re6^^xsd:string" , "Nf3^^xsd:string" , "Rac1^^xsd:string" , "Be3^^xsd:string" , "c3^^xsd:string" , "Ne7^^xsd:string" , "Bd5^^xsd:string" , "Qa4^^xsd:string" , "Nxd5^^xsd:string" , "exd5^^xsd:string" , "Ne5^^xsd:string" , "Bxc6^^xsd:string" , "Be6^^xsd:string" , "h3^^xsd:string" , "Qf6^^xsd:string" , "a4^^xsd:string" , "Re1+^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamuajeKj9> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Fischer, Robert James^^xsd:string" , "Evans, Larry Melvyn^^xsd:string" .

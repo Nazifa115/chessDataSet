@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/hmgamR4Hpsi4>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "O-O^^xsd:string" , "Na5^^xsd:string" , "Be7^^xsd:string" , "Qc2^^xsd:string" , "cxd4^^xsd:string" , "Nf3^^xsd:string" , "Qb3^^xsd:string" , "Qf7^^xsd:string" , "fxe4^^xsd:string" , "Rf5+^^xsd:string" , "Bxe4^^xsd:string" , "Bf6^^xsd:string" , "Qxf5^^xsd:string" , "Nec6^^xsd:string" , "d3^^xsd:string" , "Bf5+^^xsd:string" , "Bd2^^xsd:string" , "d4^^xsd:string" , "Nbc6^^xsd:string" , "Nxe5^^xsd:string" , "Qf5^^xsd:string" , "Bg6+^^xsd:string" , "Re1+^^xsd:string" , "Bg4^^xsd:string" , "Nxe4^^xsd:string" , "Bxd4+^^xsd:string" , "Ke6^^xsd:string" , "Bd3^^xsd:string" , "c3^^xsd:string" , "Kb8^^xsd:string" , "Kd6^^xsd:string" , "Bxf3^^xsd:string" , "Rxf3^^xsd:string" , "Qe7^^xsd:string" , "Ke7^^xsd:string" , "Bxf5^^xsd:string" , "Nc4^^xsd:string" , "fxe5^^xsd:string" , "Qg6+^^xsd:string" , "Kd5^^xsd:string" , "f5^^xsd:string" , "Bxc7#^^xsd:string" , "dxe4^^xsd:string" , "Ng4^^xsd:string" , "Qd7^^xsd:string" , "Kd7^^xsd:string" , "d5^^xsd:string" , "Bxh7^^xsd:string" , "Rf7+^^xsd:string" , "Bf4+^^xsd:string" , "Kc8^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamR4Hpsi4> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Hirschfeld, Philipp^^xsd:string" , "Steinitz, William^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgrR4Hpsi>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamG4MbV> .
+
+<http://purl.org/NET/rdfchess/id/hmgamG4MbVi1>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Nf6^^xsd:string" , "e5^^xsd:string" , "Nc3^^xsd:string" , "f4^^xsd:string" , "e4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamR4Hpsi4> , <http://purl.org/NET/rdfchess/id/hmgamG4MbVi1> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Steinitz, William^^xsd:string" , "Hirschfeld, Philipp^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamG4MbV>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "GBR tour sim^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Great Britain^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Hirschfeld, Philipp^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamG4MbVi1> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamR4Hpsi4> , <http://purl.org/NET/rdfchess/id/hmgamG4MbVi1> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamR4Hpsi4> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "C29^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrR4Hpsi> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1-0^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Steinitz, William^^xsd:string" .

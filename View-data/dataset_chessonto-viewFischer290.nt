@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/cgrJz2BPI>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamJz2BP> .
+
+<http://purl.org/NET/rdfchess/id/hmgamJz2BPIo>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Be2^^xsd:string" , "Nf3^^xsd:string" , "Rxf4^^xsd:string" , "Ne7^^xsd:string" , "Neg7^^xsd:string" , "dxc6^^xsd:string" , "Bg5^^xsd:string" , "Qe7^^xsd:string" , "Be3^^xsd:string" , "Bxd5^^xsd:string" , "Nxf5^^xsd:string" , "d5^^xsd:string" , "Nc3^^xsd:string" , "Bxf6^^xsd:string" , "O-O^^xsd:string" , "Nxf6^^xsd:string" , "Re4^^xsd:string" , "Ne8^^xsd:string" , "f4^^xsd:string" , "Raf1^^xsd:string" , "e4^^xsd:string" , "c5^^xsd:string" , "Qd2^^xsd:string" , "Nd4^^xsd:string" , "Bxc6^^xsd:string" , "exf5^^xsd:string" , "Nf6^^xsd:string" , "Bf6^^xsd:string" , "Nc6^^xsd:string" , "g6^^xsd:string" , "Nh4^^xsd:string" , "d4^^xsd:string" , "Qxf8^^xsd:string" , "Ne1^^xsd:string" , "Nc2^^xsd:string" , "e5^^xsd:string" , "Bd7^^xsd:string" , "exf4^^xsd:string" , "g4^^xsd:string" , "c4^^xsd:string" , "Qd8^^xsd:string" , "Rxf8+^^xsd:string" , "f5^^xsd:string" , "Nd5^^xsd:string" , "Bg7^^xsd:string" , "Ng4^^xsd:string" , "d6^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamJz2BPIo> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Reshevsky, Samuel Herman^^xsd:string" , "Fischer, Robert James^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamJz2BP>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "USA-ch^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "New York^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Fischer, Robert James^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamJz2BPIo> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamJz2BPIo> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamJz2BPIo> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "E97^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrJz2BPI> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Reshevsky, Samuel Herman^^xsd:string" .

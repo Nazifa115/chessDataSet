@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/cgr75sel4>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gam75sel> .
+
+<http://purl.org/NET/rdfchess/id/hmgam75sel4g>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Qxf7^^xsd:string" , "Qc4^^xsd:string" , "dxe5^^xsd:string" , "Bg2^^xsd:string" , "cxd5^^xsd:string" , "Qxd5+^^xsd:string" , "e5^^xsd:string" , "a4^^xsd:string" , "Rac8^^xsd:string" , "Nd4^^xsd:string" , "b6^^xsd:string" , "e3^^xsd:string" , "Qg4^^xsd:string" , "Bb7^^xsd:string" , "d3^^xsd:string" , "d6^^xsd:string" , "Rc8^^xsd:string" , "O-O^^xsd:string" , "Bxc6^^xsd:string" , "c4^^xsd:string" , "Rxc1^^xsd:string" , "Bb4^^xsd:string" , "Qb3^^xsd:string" , "Rxf7^^xsd:string" , "Nc6^^xsd:string" , "c6^^xsd:string" , "g3^^xsd:string" , "Qg5^^xsd:string" , "Nd5^^xsd:string" , "Rc7^^xsd:string" , "Nf6^^xsd:string" , "e4^^xsd:string" , "Qf6^^xsd:string" , "Nc3^^xsd:string" , "Nxd5^^xsd:string" , "Qxd5^^xsd:string" , "Rxc6^^xsd:string" , "Bd5^^xsd:string" , "Qxb4^^xsd:string" , "exd4^^xsd:string" , "Nxd4^^xsd:string" , "Ba6^^xsd:string" , "Nf5^^xsd:string" , "Nb5^^xsd:string" , "dxc6^^xsd:string" , "h6^^xsd:string" , "Raxc1^^xsd:string" , "Ne2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam75sel4g> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov,Ana^^xsd:string" , "Costa,Ala^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gam75sel>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "ch-Euro Blitz^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Ajaccio FRA^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Costa,Ala^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam75sel4g> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam75sel4g> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam75sel4g> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "A25^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgr75sel4> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1-0^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Karpov,Ana^^xsd:string" .

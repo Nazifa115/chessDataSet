@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamdhVSY> .
+
+<http://purl.org/NET/rdfchess/id/cgrdhVSYV>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamdhVSY>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Milan^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Milan^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karpov, Anatoly^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamdhVSYVh> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamdhVSYVh> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamdhVSYVh> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "E18^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrdhVSYV> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Browne, Walter S^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamdhVSYVh>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Nf6^^xsd:string" , "Rad1^^xsd:string" , "g3^^xsd:string" , "Nxe4^^xsd:string" , "Bb7^^xsd:string" , "Ne4^^xsd:string" , "gxf6^^xsd:string" , "d5^^xsd:string" , "Bxe4^^xsd:string" , "Ne1^^xsd:string" , "Be7^^xsd:string" , "Qxd4^^xsd:string" , "d4^^xsd:string" , "cxd4^^xsd:string" , "Nc3^^xsd:string" , "Nf3^^xsd:string" , "f5^^xsd:string" , "Bxf6^^xsd:string" , "O-O^^xsd:string" , "c4^^xsd:string" , "b3^^xsd:string" , "dxe4^^xsd:string" , "Nc2^^xsd:string" , "Rxd8^^xsd:string" , "Bf6^^xsd:string" , "c5^^xsd:string" , "Bg2^^xsd:string" , "e6^^xsd:string" , "Bb2^^xsd:string" , "Qxd8^^xsd:string" , "b6^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamdhVSYVh> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Browne, Walter S^^xsd:string" , "Karpov, Anatoly^^xsd:string" .

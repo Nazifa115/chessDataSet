@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/cgrS5g0Fe>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamIQG0U79>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "O-O^^xsd:string" , "Nf6^^xsd:string" , "Bg5^^xsd:string" , "Nc3^^xsd:string" , "d6^^xsd:string" , "e3^^xsd:string" , "d4^^xsd:string" , "b6^^xsd:string" , "Nbd7^^xsd:string" , "Bxc3+^^xsd:string" , "e6^^xsd:string" , "Qxc3^^xsd:string" , "c4^^xsd:string" , "Bd3^^xsd:string" , "Qc2^^xsd:string" , "a3^^xsd:string" , "Bb4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamIQG0U79> , <http://purl.org/NET/rdfchess/id/hmgamUQSmt8b> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Doroshkievich, Vladimir K^^xsd:string" , "Karpov, Anatoly^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamIQG0U> .
+
+<http://purl.org/NET/rdfchess/id/hmgamUQSmt8b>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Qd6+^^xsd:string" , "b5^^xsd:string" , "c5^^xsd:string" , "Rfb8^^xsd:string" , "Kh2^^xsd:string" , "Kf2^^xsd:string" , "Rf3^^xsd:string" , "Ne2^^xsd:string" , "Ng3^^xsd:string" , "h3^^xsd:string" , "Ba6^^xsd:string" , "Kg1^^xsd:string" , "Qa5^^xsd:string" , "Bb7^^xsd:string" , "Rg3^^xsd:string" , "d4^^xsd:string" , "f5^^xsd:string" , "Rc3^^xsd:string" , "d5^^xsd:string" , "Qxc5^^xsd:string" , "Qe3^^xsd:string" , "Qxf6^^xsd:string" , "f3^^xsd:string" , "Qe1^^xsd:string" , "Qxd4+^^xsd:string" , "Qd2^^xsd:string" , "Bh4^^xsd:string" , "cxd4^^xsd:string" , "Rb2^^xsd:string" , "Rb1+^^xsd:string" , "fxe6^^xsd:string" , "Qa6+^^xsd:string" , "Rf1+^^xsd:string" , "R8b3^^xsd:string" , "Qd3^^xsd:string" , "bxc4^^xsd:string" , "Re1+^^xsd:string" , "Nc4^^xsd:string" , "b3^^xsd:string" , "exd4^^xsd:string" , "Rb8^^xsd:string" , "Na5^^xsd:string" , "Ne3^^xsd:string" , "Rxb3^^xsd:string" , "h6^^xsd:string" , "O-O^^xsd:string" , "Rb7^^xsd:string" , "Nb8^^xsd:string" , "Rc8^^xsd:string" , "Nh5^^xsd:string" , "f4^^xsd:string" , "Ke2^^xsd:string" , "Rc1^^xsd:string" , "Nc6^^xsd:string" , "Rxd3^^xsd:string" , "Bxf6^^xsd:string" , "Bxd3^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamUQSmt8b> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov, Anatoly^^xsd:string" , "Doroshkievich, Vladimir K^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamIQG0U>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "URS-ch38 Riga^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Riga^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karpov, Anatoly^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamIQG0U79> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamUQSmt8b> , <http://purl.org/NET/rdfchess/id/hmgamIQG0U79> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamUQSmt8b> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "E32^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrS5g0Fe> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "0-1^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Doroshkievich, Vladimir K^^xsd:string" .

@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/gamotXsR>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Las Palmas^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Las Palmas^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karpov, Anatoly^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamotXsRMV> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamotXsRMV> , <http://purl.org/NET/rdfchess/id/hmgamztSGoOZ> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamztSGoOZ> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "E32^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrztSGoO> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1-0^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Lautier, Joel^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamotXsR> .
+
+<http://purl.org/NET/rdfchess/id/hmgamztSGoOZ>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Bxc3+^^xsd:string" , "g4^^xsd:string" , "Rd1^^xsd:string" , "Qxh6+^^xsd:string" , "d4^^xsd:string" , "Be2^^xsd:string" , "e3^^xsd:string" , "Nbd7^^xsd:string" , "exd4^^xsd:string" , "Nf2^^xsd:string" , "d6^^xsd:string" , "Bg5^^xsd:string" , "Qxc5^^xsd:string" , "Bh4^^xsd:string" , "bxc5^^xsd:string" , "dxc5^^xsd:string" , "Ba6^^xsd:string" , "Re8^^xsd:string" , "h5^^xsd:string" , "Kd8^^xsd:string" , "Bg3^^xsd:string" , "gxf3^^xsd:string" , "Qb6^^xsd:string" , "Nd3^^xsd:string" , "d5^^xsd:string" , "O-O-O^^xsd:string" , "h4^^xsd:string" , "h6^^xsd:string" , "Nxc5^^xsd:string" , "Nh3^^xsd:string" , "a4^^xsd:string" , "Kf8^^xsd:string" , "g5^^xsd:string" , "Qg5^^xsd:string" , "f3^^xsd:string" , "cxd4^^xsd:string" , "Rab8^^xsd:string" , "Rh4^^xsd:string" , "a5^^xsd:string" , "c5^^xsd:string" , "e5^^xsd:string" , "Rg1^^xsd:string" , "Qd2^^xsd:string" , "Bb7^^xsd:string" , "Nc5^^xsd:string" , "Ke7^^xsd:string" , "b6^^xsd:string" , "Qxc3^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamztSGoOZ> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov, Anatoly^^xsd:string" , "Lautier, Joel^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamotXsRMV>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Bb4^^xsd:string" , "Qc2^^xsd:string" , "e6^^xsd:string" , "Nf6^^xsd:string" , "c4^^xsd:string" , "O-O^^xsd:string" , "Nc3^^xsd:string" , "a3^^xsd:string" , "d4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamztSGoOZ> , <http://purl.org/NET/rdfchess/id/hmgamotXsRMV> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov, Anatoly^^xsd:string" , "Lautier, Joel^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgrztSGoO>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .

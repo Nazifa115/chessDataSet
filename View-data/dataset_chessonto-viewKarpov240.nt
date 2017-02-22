@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamAsJ8s> .
+
+<http://purl.org/NET/rdfchess/id/hmgamAsJ8sgR>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Bg2^^xsd:string" , "Bf5^^xsd:string" , "O-O^^xsd:string" , "Ra5^^xsd:string" , "axb6^^xsd:string" , "bxa5^^xsd:string" , "b6^^xsd:string" , "Qb3^^xsd:string" , "a3^^xsd:string" , "d5^^xsd:string" , "b4^^xsd:string" , "Rfc8^^xsd:string" , "Ra1^^xsd:string" , "Qb2^^xsd:string" , "g3^^xsd:string" , "Bf8^^xsd:string" , "c6^^xsd:string" , "Bb4^^xsd:string" , "Bc3^^xsd:string" , "Nf3^^xsd:string" , "Bxb2^^xsd:string" , "b3^^xsd:string" , "Qd8^^xsd:string" , "h3^^xsd:string" , "Bh7^^xsd:string" , "c4^^xsd:string" , "Nf6^^xsd:string" , "Be7^^xsd:string" , "Qxb6^^xsd:string" , "axb4^^xsd:string" , "h6^^xsd:string" , "Rc1^^xsd:string" , "cxd5^^xsd:string" , "e6^^xsd:string" , "Qxb2^^xsd:string" , "d3^^xsd:string" , "Qb6^^xsd:string" , "a5^^xsd:string" , "Rxa5^^xsd:string" , "Bb2^^xsd:string" , "Nbd2^^xsd:string" , "Nbd7^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamAsJ8sgR> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Panno, Oscar^^xsd:string" , "Karpov, Anatoly^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgrAsJ8sg>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamAsJ8s>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Madrid^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Madrid^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karpov, Anatoly^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamAsJ8sgR> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamAsJ8sgR> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamAsJ8sgR> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "A12^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrAsJ8sg> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Panno, Oscar^^xsd:string" .

@@ -1,0 +1,51 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/hmgame14USWE>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Kg7^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Fischer, Robert James^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgam338GkVA>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Rc1^^xsd:string" , "c4^^xsd:string" , "Nfd7^^xsd:string" , "Qb3^^xsd:string" , "Rd8+^^xsd:string" , "Bg4^^xsd:string" , "Rdd2^^xsd:string" , "Qb5^^xsd:string" , "a4^^xsd:string" , "d4^^xsd:string" , "Rxb4^^xsd:string" , "Re8^^xsd:string" , "Bg7^^xsd:string" , "Nf6^^xsd:string" , "Bh3^^xsd:string" , "Bd4^^xsd:string" , "Ke2^^xsd:string" , "O-O^^xsd:string" , "Rxa7^^xsd:string" , "Kg3^^xsd:string" , "f3^^xsd:string" , "Bxc5^^xsd:string" , "Rxd7^^xsd:string" , "c6^^xsd:string" , "Bxd7^^xsd:string" , "Qxb7^^xsd:string" , "Rd8^^xsd:string" , "Nc6^^xsd:string" , "dxe5^^xsd:string" , "Rxb2+^^xsd:string" , "dxc4^^xsd:string" , "Ra2^^xsd:string" , "Ncxe5^^xsd:string" , "Rd3+^^xsd:string" , "c5^^xsd:string" , "Nxf3+^^xsd:string" , "Nf3^^xsd:string" , "Rc2^^xsd:string" , "Bb4^^xsd:string" , "Rd1^^xsd:string" , "g6^^xsd:string" , "Rda3^^xsd:string" , "Kf1^^xsd:string" , "Kg2^^xsd:string" , "Qxd7^^xsd:string" , "Qxc4^^xsd:string" , "Rxa4^^xsd:string" , "Bxc3^^xsd:string" , "Bxf3^^xsd:string" , "e5^^xsd:string" , "e4^^xsd:string" , "Nc3^^xsd:string" , "Rxc5^^xsd:string" , "Rb8^^xsd:string" , "Ra4^^xsd:string" , "Be3^^xsd:string" , "d5^^xsd:string" , "Rf1^^xsd:string" , "Nfe5^^xsd:string" , "gxf3^^xsd:string" , "Nxd7^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam338GkVA> , <http://purl.org/NET/rdfchess/id/hmgame14USWE> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Evans, Larry Melvyn^^xsd:string" , "Fischer, Robert James^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgre14USW>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gam338Gk> .
+
+<http://purl.org/NET/rdfchess/id/gam338Gk>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "USA-ch^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "New York^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Fischer, Robert James^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam338GkVA> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgame14USWE> , <http://purl.org/NET/rdfchess/id/hmgam338GkVA> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgame14USWE> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "D98^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgre14USW> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Evans, Larry Melvyn^^xsd:string" .

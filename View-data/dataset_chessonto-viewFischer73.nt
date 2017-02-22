@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/hmgamuivOSUE>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "h6^^xsd:string" , "Nc6^^xsd:string" , "Rxd5^^xsd:string" , "Ncxd5^^xsd:string" , "exd4^^xsd:string" , "Nb4^^xsd:string" , "d4^^xsd:string" , "e6^^xsd:string" , "Bc2^^xsd:string" , "Bxf6^^xsd:string" , "Be6^^xsd:string" , "O-O^^xsd:string" , "Kf8^^xsd:string" , "Nf6^^xsd:string" , "c4^^xsd:string" , "Bh4^^xsd:string" , "Nf4^^xsd:string" , "Nxc2^^xsd:string" , "c5^^xsd:string" , "cxd4^^xsd:string" , "cxd5^^xsd:string" , "Bb4^^xsd:string" , "e3^^xsd:string" , "Nc3^^xsd:string" , "Nxd5^^xsd:string" , "Bd3^^xsd:string" , "Qh7+^^xsd:string" , "Bg5^^xsd:string" , "d5^^xsd:string" , "Rfe1^^xsd:string" , "a3^^xsd:string" , "Be7^^xsd:string" , "Qb6^^xsd:string" , "Ne2^^xsd:string" , "exd5^^xsd:string" , "Rfd8^^xsd:string" , "Qd3^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamuivOSUE> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Fischer, Robert James^^xsd:string" , "Euwe, Max^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamuivOS> .
+
+<http://purl.org/NET/rdfchess/id/gamuivOS>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "New York m3^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "New York^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Fischer, Robert James^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamuivOSUE> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamuivOSUE> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamuivOSUE> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "E30^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgruivOSU> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1-0^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Euwe, Max^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgruivOSU>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .

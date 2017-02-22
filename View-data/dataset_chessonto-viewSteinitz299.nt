@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/hmgamueqbsns>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Bd3^^xsd:string" , "Ne5^^xsd:string" , "Ba3^^xsd:string" , "Bxc4^^xsd:string" , "dxc4^^xsd:string" , "Bxc3+^^xsd:string" , "Qc2^^xsd:string" , "O-O^^xsd:string" , "Bb4^^xsd:string" , "Re8^^xsd:string" , "Nf6^^xsd:string" , "bxc3^^xsd:string" , "e3^^xsd:string" , "Nd7^^xsd:string" , "d4^^xsd:string" , "Nf3^^xsd:string" , "c4^^xsd:string" , "Ne4^^xsd:string" , "d5^^xsd:string" , "f5^^xsd:string" , "e6^^xsd:string" , "Nc3^^xsd:string" , "Nd6^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamueqbsns> , <http://purl.org/NET/rdfchess/id/hmgamFemo2mv> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Mortimer, James^^xsd:string" , "Steinitz, William^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamFemo2mv>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Nf7^^xsd:string" , "Bc1^^xsd:string" , "Bh6^^xsd:string" , "hxg6^^xsd:string" , "Kg8^^xsd:string" , "c6^^xsd:string" , "R1e4^^xsd:string" , "Qg7^^xsd:string" , "Qf5+^^xsd:string" , "Bxg6+^^xsd:string" , "c5^^xsd:string" , "Nd5^^xsd:string" , "a5^^xsd:string" , "fxg6+^^xsd:string" , "Nf4^^xsd:string" , "Rg4^^xsd:string" , "Rfe1^^xsd:string" , "Bd7^^xsd:string" , "Bf5^^xsd:string" , "Rf4+^^xsd:string" , "Nxf7^^xsd:string" , "Rf7^^xsd:string" , "Qf6+^^xsd:string" , "Bc4^^xsd:string" , "Rxd5^^xsd:string" , "b5^^xsd:string" , "Re5^^xsd:string" , "Qxf7^^xsd:string" , "Rge8^^xsd:string" , "Qf6^^xsd:string" , "Kxf7^^xsd:string" , "Rg8^^xsd:string" , "Bxf7+^^xsd:string" , "Bd3^^xsd:string" , "g6^^xsd:string" , "e4^^xsd:string" , "Rae1^^xsd:string" , "Bg5^^xsd:string" , "h4^^xsd:string" , "f3^^xsd:string" , "exf5^^xsd:string" , "Kg7^^xsd:string" , "Bxf5^^xsd:string" , "exd5^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamFemo2mv> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Mortimer, James^^xsd:string" , "Steinitz, William^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamueqbs>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "London^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "London^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Mortimer, James^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamueqbsns> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamFemo2mv> , <http://purl.org/NET/rdfchess/id/hmgamueqbsns> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamFemo2mv> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "E51^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrFemo2m> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1-0^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Steinitz, William^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamueqbs> .
+
+<http://purl.org/NET/rdfchess/id/cgrFemo2m>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .

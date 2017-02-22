@@ -1,0 +1,69 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/gamRD2En>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Reggio Emilia8990^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Reggio Emilia^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karpov, Anatoly^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamRD2EnsO> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamqBPm1sY> , <http://purl.org/NET/rdfchess/id/hmgamuD9dguI> , <http://purl.org/NET/rdfchess/id/hmgamjDbZHtD> , <http://purl.org/NET/rdfchess/id/hmgamRD2EnsO> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamqBPm1sY> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "E55^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrqBPm1s> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "0-1^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Beliavsky, Alexander G^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamjDbZHtD>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Kf8^^xsd:string" , "Rd8^^xsd:string" , "Ne2^^xsd:string" , "Ne5^^xsd:string" , "hxg3^^xsd:string" , "f3^^xsd:string" , "Nc4^^xsd:string" , "Nb5^^xsd:string" , "Rad1^^xsd:string" , "a6^^xsd:string" , "Nb3^^xsd:string" , "Bc6^^xsd:string" , "Nxd2^^xsd:string" , "Bxc5^^xsd:string" , "a4^^xsd:string" , "Nxc5^^xsd:string" , "Ke7^^xsd:string" , "Nf6^^xsd:string" , "e4^^xsd:string" , "Nc3^^xsd:string" , "Bd7^^xsd:string" , "exd5^^xsd:string" , "Rxd8^^xsd:string" , "Rc8^^xsd:string" , "Qh4^^xsd:string" , "Bb4^^xsd:string" , "Qc7^^xsd:string" , "Qxg3^^xsd:string" , "Ba7^^xsd:string" , "Ke3^^xsd:string" , "cxd4^^xsd:string" , "Bd1^^xsd:string" , "a3^^xsd:string" , "Qd4^^xsd:string" , "Nh5^^xsd:string" , "Be2^^xsd:string" , "Nc5^^xsd:string" , "Be8^^xsd:string" , "Bc5^^xsd:string" , "Nd2^^xsd:string" , "Qe7^^xsd:string" , "Nexd4^^xsd:string" , "Bd6^^xsd:string" , "Nd5+^^xsd:string" , "Kf2^^xsd:string" , "Qg3^^xsd:string" , "Bd2^^xsd:string" , "a5^^xsd:string" , "Bb8^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamjDbZHtD> , <http://purl.org/NET/rdfchess/id/hmgamuD9dguI> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov, Anatoly^^xsd:string" , "Beliavsky, Alexander G^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamqBPm1sY>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Re7^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov, Anatoly^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamRD2En> .
+
+<http://purl.org/NET/rdfchess/id/cgrqBPm1s>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamuD9dguI>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Nxf6^^xsd:string" , "Rd6+^^xsd:string" , "Rd5^^xsd:string" , "Rd7^^xsd:string" , "Rd3^^xsd:string" , "Rd2+^^xsd:string" , "Kg3^^xsd:string" , "Nb1^^xsd:string" , "Re2+^^xsd:string" , "Ke5^^xsd:string" , "Ke7^^xsd:string" , "Rc6^^xsd:string" , "Rc1^^xsd:string" , "Re5^^xsd:string" , "Kd7^^xsd:string" , "Ke3^^xsd:string" , "f6^^xsd:string" , "Bxf3^^xsd:string" , "exf3^^xsd:string" , "h6^^xsd:string" , "Rxa5^^xsd:string" , "Nd4^^xsd:string" , "Rb5^^xsd:string" , "Nh5^^xsd:string" , "Nc3^^xsd:string" , "Rc2^^xsd:string" , "Rf5^^xsd:string" , "Nxf5+^^xsd:string" , "Kc6^^xsd:string" , "g4^^xsd:string" , "gxf3^^xsd:string" , "dxe4^^xsd:string" , "gxf5^^xsd:string" , "Nd7+^^xsd:string" , "Kd4^^xsd:string" , "Rc5^^xsd:string" , "Rg2^^xsd:string" , "Nc5^^xsd:string" , "Ne6^^xsd:string" , "Ne4^^xsd:string" , "Kf4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamuD9dguI> , <http://purl.org/NET/rdfchess/id/hmgamqBPm1sY> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Beliavsky, Alexander G^^xsd:string" , "Karpov, Anatoly^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamRD2EnsO>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Nc3^^xsd:string" , "O-O^^xsd:string" , "dxc4^^xsd:string" , "d5^^xsd:string" , "c4^^xsd:string" , "Bd3^^xsd:string" , "c5^^xsd:string" , "Bb4^^xsd:string" , "d4^^xsd:string" , "Nf3^^xsd:string" , "e6^^xsd:string" , "Nf6^^xsd:string" , "Bxc4^^xsd:string" , "e3^^xsd:string" , "Nbd7^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamjDbZHtD> , <http://purl.org/NET/rdfchess/id/hmgamRD2EnsO> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov, Anatoly^^xsd:string" , "Beliavsky, Alexander G^^xsd:string" .

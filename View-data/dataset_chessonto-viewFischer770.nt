@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/cgrJfe6G8>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamJfe6G8d>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Qf6^^xsd:string" , "Ra8^^xsd:string" , "Bg7^^xsd:string" , "Rxd8+^^xsd:string" , "f3^^xsd:string" , "axb6^^xsd:string" , "Nxd5^^xsd:string" , "b4^^xsd:string" , "Bc6^^xsd:string" , "Rg6^^xsd:string" , "Kf2^^xsd:string" , "Kg1^^xsd:string" , "Be4^^xsd:string" , "h6^^xsd:string" , "gxf3^^xsd:string" , "Bxf4^^xsd:string" , "Kh7^^xsd:string" , "Rc6^^xsd:string" , "Re6^^xsd:string" , "Nb5^^xsd:string" , "Kf1^^xsd:string" , "fxe5^^xsd:string" , "Bf8^^xsd:string" , "Rxd8^^xsd:string" , "exf4^^xsd:string" , "Nfxd5^^xsd:string" , "Qc1+^^xsd:string" , "cxb6^^xsd:string" , "Bb7^^xsd:string" , "Be5^^xsd:string" , "Re8^^xsd:string" , "a3^^xsd:string" , "Qxc6^^xsd:string" , "Nd4^^xsd:string" , "Qc5+^^xsd:string" , "c5^^xsd:string" , "Nf4^^xsd:string" , "Nf3^^xsd:string" , "dxe5^^xsd:string" , "Rc8^^xsd:string" , "Kh8^^xsd:string" , "Qe5+^^xsd:string" , "Rd1^^xsd:string" , "Qg7+^^xsd:string" , "Qd7^^xsd:string" , "Rfd8^^xsd:string" , "Qe7^^xsd:string" , "Kxh2^^xsd:string" , "Bxh2^^xsd:string" , "Kg2^^xsd:string" , "Qa4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamJfe6G8d> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Taimanov, Mark E^^xsd:string" , "Fischer, Robert James^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamK1Bgv2D>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "f4^^xsd:string" , "Rc1^^xsd:string" , "e4^^xsd:string" , "Nc3^^xsd:string" , "d4^^xsd:string" , "Nf6^^xsd:string" , "Ne7^^xsd:string" , "f5^^xsd:string" , "Bg7^^xsd:string" , "gxf5^^xsd:string" , "Ng5^^xsd:string" , "g6^^xsd:string" , "O-O^^xsd:string" , "Bd2^^xsd:string" , "d6^^xsd:string" , "Nf3^^xsd:string" , "Ne8^^xsd:string" , "d5^^xsd:string" , "Be2^^xsd:string" , "exf5^^xsd:string" , "Nc6^^xsd:string" , "Qb3^^xsd:string" , "e5^^xsd:string" , "c4^^xsd:string" , "b6^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamJfe6G8d> , <http://purl.org/NET/rdfchess/id/hmgamK1Bgv2D> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Taimanov, Mark E^^xsd:string" , "Fischer, Robert James^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamK1Bgv> .
+
+<http://purl.org/NET/rdfchess/id/gamK1Bgv>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Candidats qf3^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Vancouver^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Fischer, Robert James^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamK1Bgv2D> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamJfe6G8d> , <http://purl.org/NET/rdfchess/id/hmgamK1Bgv2D> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamJfe6G8d> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "E97^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrJfe6G8> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "0-1^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Taimanov, Mark E^^xsd:string" .

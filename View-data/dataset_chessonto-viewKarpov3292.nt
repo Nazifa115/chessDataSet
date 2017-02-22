@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gampFgi3> .
+
+<http://purl.org/NET/rdfchess/id/cgrpFgi3s>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgampFgi3ss>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "b5^^xsd:string" , "Qxd1^^xsd:string" , "e3^^xsd:string" , "Kf8^^xsd:string" , "Nc5^^xsd:string" , "Nxc3^^xsd:string" , "Rac8^^xsd:string" , "a6^^xsd:string" , "c5^^xsd:string" , "d4^^xsd:string" , "Rxd1^^xsd:string" , "Bc3^^xsd:string" , "Bxc5^^xsd:string" , "Bxc4^^xsd:string" , "Be2^^xsd:string" , "dxc5^^xsd:string" , "dxc4^^xsd:string" , "Nbd2^^xsd:string" , "Nf6^^xsd:string" , "d5^^xsd:string" , "Bb7^^xsd:string" , "Bb4^^xsd:string" , "Rc8^^xsd:string" , "c4^^xsd:string" , "Nb3^^xsd:string" , "e6^^xsd:string" , "Ne5^^xsd:string" , "Bd2^^xsd:string" , "Nbd4^^xsd:string" , "Be7^^xsd:string" , "Nf3^^xsd:string" , "O-O^^xsd:string" , "bxc3^^xsd:string" , "Bxf3^^xsd:string" , "Nbd7^^xsd:string" , "Na4^^xsd:string" , "Rc7^^xsd:string" , "Rac1^^xsd:string" , "Bf3^^xsd:string" , "Nxd7^^xsd:string" , "Nxf3^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgampFgi3ss> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov,Ana^^xsd:string" , "Maisuradze,N^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gampFgi3>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "2nd Karpov Trophy Prelim^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Cap d'Agde FRA^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karpov,Ana^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgampFgi3ss> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgampFgi3ss> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgampFgi3ss> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "D27^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrpFgi3s> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "0-1^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Maisuradze,N^^xsd:string" .

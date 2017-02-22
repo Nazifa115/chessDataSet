@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/hmgamIvNRLQY>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Qxe2+^^xsd:string" , "Qe7^^xsd:string" , "e4^^xsd:string" , "d3^^xsd:string" , "Nf6^^xsd:string" , "Qe2^^xsd:string" , "Nxe4^^xsd:string" , "d6^^xsd:string" , "Nf3^^xsd:string" , "Nxe5^^xsd:string" , "Be7^^xsd:string" , "Bxe2^^xsd:string" , "e5^^xsd:string" , "Bg5^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamIvNRLQY> , <http://purl.org/NET/rdfchess/id/hmgamDtu1xOe> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov, Anatoly^^xsd:string" , "Spassky, Boris V^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamIvNRL>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Linares^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Linares^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karpov, Anatoly^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamIvNRLQY> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamDtu1xOe> , <http://purl.org/NET/rdfchess/id/hmgamIvNRLQY> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamDtu1xOe> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "C42^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrDtu1xO> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Spassky, Boris V^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamIvNRL> .
+
+<http://purl.org/NET/rdfchess/id/cgrDtu1xO>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamDtu1xOe>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Rfxc8^^xsd:string" , "d5^^xsd:string" , "Rb7^^xsd:string" , "Rfe1^^xsd:string" , "Ng5^^xsd:string" , "Ne6^^xsd:string" , "Nc3^^xsd:string" , "Nh5^^xsd:string" , "Bxc5^^xsd:string" , "Rac8^^xsd:string" , "Kg7^^xsd:string" , "Rxc7^^xsd:string" , "Bg4^^xsd:string" , "Rab1^^xsd:string" , "Bg3^^xsd:string" , "h6^^xsd:string" , "c6^^xsd:string" , "g4^^xsd:string" , "Reb1^^xsd:string" , "dxc5^^xsd:string" , "Nb3^^xsd:string" , "Nac5^^xsd:string" , "Nf8^^xsd:string" , "Kf1^^xsd:string" , "Nbd7^^xsd:string" , "hxg3^^xsd:string" , "Rb8+^^xsd:string" , "g5^^xsd:string" , "Na4^^xsd:string" , "Nxg3^^xsd:string" , "Bd6^^xsd:string" , "Bxc8^^xsd:string" , "O-O^^xsd:string" , "Kf8^^xsd:string" , "Nd4^^xsd:string" , "b4^^xsd:string" , "Nd2^^xsd:string" , "c3^^xsd:string" , "h5^^xsd:string" , "Bh4^^xsd:string" , "d4^^xsd:string" , "b5^^xsd:string" , "Rc7^^xsd:string" , "bxc6^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamDtu1xOe> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov, Anatoly^^xsd:string" , "Spassky, Boris V^^xsd:string" .

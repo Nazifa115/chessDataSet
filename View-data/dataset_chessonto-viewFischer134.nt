@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamWw26K> .
+
+<http://purl.org/NET/rdfchess/id/cgrWw26Ku>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamWw26K>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Portoroz Interzonal^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Portoroz^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Neikirkh, Oleg^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamWw26KuO> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamWw26KuO> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamWw26KuO> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "C67^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrWw26Ku> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Fischer, Robert James^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamWw26KuO>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "e4^^xsd:string" , "Nc6^^xsd:string" , "Qxd4^^xsd:string" , "dxe5^^xsd:string" , "dxc6^^xsd:string" , "Nd6^^xsd:string" , "Nf5^^xsd:string" , "Bxe4^^xsd:string" , "Qe2^^xsd:string" , "Nf3^^xsd:string" , "bxa5^^xsd:string" , "Bf5^^xsd:string" , "Ne4^^xsd:string" , "Bg4^^xsd:string" , "Qxe3^^xsd:string" , "a5^^xsd:string" , "cxb4^^xsd:string" , "Bxe3^^xsd:string" , "d4^^xsd:string" , "e5^^xsd:string" , "Nc3^^xsd:string" , "Nf6^^xsd:string" , "c3^^xsd:string" , "Qe3^^xsd:string" , "O-O^^xsd:string" , "Rxa5^^xsd:string" , "Bb5^^xsd:string" , "Bb4^^xsd:string" , "Nd4^^xsd:string" , "Nxd4^^xsd:string" , "Bxc6^^xsd:string" , "Nxe4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamWw26KuO> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Fischer, Robert James^^xsd:string" , "Neikirkh, Oleg^^xsd:string" .

@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamcm6D1> .
+
+<http://purl.org/NET/rdfchess/id/gamcm6D1>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Hannover^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Hannover^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Quinteros, Miguel A^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamcm6D1ET> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamcm6D1ET> , <http://purl.org/NET/rdfchess/id/hmgamDofXlEL> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamDofXlEL> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "B85^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrDofXlE> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Karpov, Anatoly^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgrDofXlE>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamcm6D1ET>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "d4^^xsd:string" , "Bc4^^xsd:string" , "Qf7^^xsd:string" , "Nf3^^xsd:string" , "Qd1^^xsd:string" , "Qc7^^xsd:string" , "Nxd4^^xsd:string" , "e5^^xsd:string" , "Nxc4^^xsd:string" , "Bb6^^xsd:string" , "Nc6^^xsd:string" , "f4^^xsd:string" , "Ne6^^xsd:string" , "Ng5+^^xsd:string" , "Nf6^^xsd:string" , "Be7^^xsd:string" , "Qd5^^xsd:string" , "Qxc4^^xsd:string" , "a4^^xsd:string" , "Kh8^^xsd:string" , "Qd2^^xsd:string" , "Bxf6^^xsd:string" , "c5^^xsd:string" , "O-O^^xsd:string" , "Bd4^^xsd:string" , "Bb5^^xsd:string" , "Bxf1^^xsd:string" , "Be2^^xsd:string" , "e4^^xsd:string" , "Ne4^^xsd:string" , "Nb3^^xsd:string" , "Ne3^^xsd:string" , "Bg1^^xsd:string" , "d6^^xsd:string" , "a6^^xsd:string" , "Kh1^^xsd:string" , "cxd4^^xsd:string" , "e6^^xsd:string" , "Qe2^^xsd:string" , "Nd5^^xsd:string" , "dxe4^^xsd:string" , "f5^^xsd:string" , "Bc6^^xsd:string" , "exf6^^xsd:string" , "a5^^xsd:string" , "Re8^^xsd:string" , "Nc3^^xsd:string" , "Be3^^xsd:string" , "d5^^xsd:string" , "Nxe4^^xsd:string" , "Nb4^^xsd:string" , "Bxd4^^xsd:string" , "Qf6^^xsd:string" , "Bd7^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamDofXlEL> , <http://purl.org/NET/rdfchess/id/hmgamcm6D1ET> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Quinteros, Miguel A^^xsd:string" , "Karpov, Anatoly^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamDofXlEL>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Kg8^^xsd:string" , "Nf7+^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamDofXlEL> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Quinteros, Miguel A^^xsd:string" , "Karpov, Anatoly^^xsd:string" .

@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/hmgamGO2xlKi>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "cxd5^^xsd:string" , "c4^^xsd:string" , "g4^^xsd:string" , "Bg6^^xsd:string" , "d5^^xsd:string" , "e4^^xsd:string" , "Qxd5^^xsd:string" , "O-O^^xsd:string" , "Bd3^^xsd:string" , "Nf6^^xsd:string" , "Nb4^^xsd:string" , "Nc6^^xsd:string" , "Qxd3^^xsd:string" , "Bf5^^xsd:string" , "e5^^xsd:string" , "d4^^xsd:string" , "Re1^^xsd:string" , "Be7^^xsd:string" , "Nf3^^xsd:string" , "Nxe4^^xsd:string" , "Nxd3^^xsd:string" , "d6^^xsd:string" , "Nxe5^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamSMXLVJl> , <http://purl.org/NET/rdfchess/id/hmgamGO2xlKi> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov, Anatoly^^xsd:string" , "Anand, Viswanathan^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgrSMXLVJ>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamSMXLVJl>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "d6^^xsd:string" , "R1xe5^^xsd:string" , "f4^^xsd:string" , "d5^^xsd:string" , "f5^^xsd:string" , "Rh5^^xsd:string" , "h3^^xsd:string" , "Qc5^^xsd:string" , "Bxg6^^xsd:string" , "f6^^xsd:string" , "h5^^xsd:string" , "h4^^xsd:string" , "d7^^xsd:string" , "Nc3^^xsd:string" , "Bf7^^xsd:string" , "fxg5^^xsd:string" , "Nxc3^^xsd:string" , "Ng5^^xsd:string" , "g5^^xsd:string" , "c6^^xsd:string" , "Rh6^^xsd:string" , "Bf4^^xsd:string" , "Rae1^^xsd:string" , "Qxc3^^xsd:string" , "Kf8^^xsd:string" , "g6^^xsd:string" , "Qf5^^xsd:string" , "Rxe7^^xsd:string" , "Kg8^^xsd:string" , "Qxe5^^xsd:string" , "Bh5^^xsd:string" , "Qxf4^^xsd:string" , "Re3^^xsd:string" , "Qb8^^xsd:string" , "Qe5^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamSMXLVJl> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov, Anatoly^^xsd:string" , "Anand, Viswanathan^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamGO2xl>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Siemens Giants^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Frankfurt^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karpov, Anatoly^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamGO2xlKi> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamGO2xlKi> , <http://purl.org/NET/rdfchess/id/hmgamSMXLVJl> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamSMXLVJl> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "C42^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrSMXLVJ> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "0-1^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Anand, Viswanathan^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamGO2xl> .

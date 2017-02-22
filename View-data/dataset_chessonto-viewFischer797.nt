@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/hmgam0WHiZ1Y>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Bh3^^xsd:string" , "d5^^xsd:string" , "Nf6^^xsd:string" , "Rd8^^xsd:string" , "Na6^^xsd:string" , "exf4^^xsd:string" , "Qg6^^xsd:string" , "Qxg5^^xsd:string" , "Rg3^^xsd:string" , "Qxh3^^xsd:string" , "e4^^xsd:string" , "Bxf4^^xsd:string" , "Rf2^^xsd:string" , "e5^^xsd:string" , "Rf3^^xsd:string" , "d4^^xsd:string" , "g5^^xsd:string" , "Bxd5^^xsd:string" , "Nf3^^xsd:string" , "c6^^xsd:string" , "Nxd5^^xsd:string" , "Kh8^^xsd:string" , "Kg7^^xsd:string" , "Qh5^^xsd:string" , "Bb4^^xsd:string" , "Rc1^^xsd:string" , "f4^^xsd:string" , "Qg7^^xsd:string" , "dxe5^^xsd:string" , "Bd6^^xsd:string" , "Rh8^^xsd:string" , "Bc4^^xsd:string" , "Nc3^^xsd:string" , "Nf6+^^xsd:string" , "O-O^^xsd:string" , "Nxg5^^xsd:string" , "Bxe5^^xsd:string" , "Qh6#^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam0WHiZ1Y> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Greenblatt Programm^^xsd:string" , "Fischer, Robert James^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gam0WHiZ> .
+
+<http://purl.org/NET/rdfchess/id/cgr0WHiZ1>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gam0WHiZ>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Cambridge^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Cambridge^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Greenblatt Programm^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam0WHiZ1Y> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam0WHiZ1Y> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam0WHiZ1Y> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "C33^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgr0WHiZ1> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1-0^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Fischer, Robert James^^xsd:string" .

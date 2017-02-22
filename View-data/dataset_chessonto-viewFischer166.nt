@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/hmgamcsnNEX9>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "e6^^xsd:string" , "c5^^xsd:string" , "a6^^xsd:string" , "Qf3^^xsd:string" , "Bc4^^xsd:string" , "Nxd4^^xsd:string" , "b5^^xsd:string" , "Be7^^xsd:string" , "O-O^^xsd:string" , "cxd4^^xsd:string" , "Nf3^^xsd:string" , "d6^^xsd:string" , "Nc3^^xsd:string" , "Qc7^^xsd:string" , "f4^^xsd:string" , "Bb3^^xsd:string" , "e4^^xsd:string" , "d4^^xsd:string" , "Nf6^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamnsi1cXb> , <http://purl.org/NET/rdfchess/id/hmgamcsnNEX9> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Fischer, Robert James^^xsd:string" , "Tal, Mihail^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgrnsi1cX>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamcsnNE>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Candidats Tournament^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Bled/Zagreb/Belgrade^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Tal, Mihail^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamcsnNEX9> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamcsnNEX9> , <http://purl.org/NET/rdfchess/id/hmgamnsi1cXb> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamnsi1cXb> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "B86^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrnsi1cX> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "0-1^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Fischer, Robert James^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamcsnNE> .
+
+<http://purl.org/NET/rdfchess/id/hmgamnsi1cXb>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Qg3+^^xsd:string" , "e5^^xsd:string" , "fxg6^^xsd:string" , "g6^^xsd:string" , "Rg8+^^xsd:string" , "d5^^xsd:string" , "Qa7+^^xsd:string" , "Bxc5+^^xsd:string" , "Qe3^^xsd:string" , "Be3^^xsd:string" , "Kxg2^^xsd:string" , "Kh8^^xsd:string" , "Ng3^^xsd:string" , "Ne2^^xsd:string" , "Nbd7^^xsd:string" , "b4^^xsd:string" , "Bb7^^xsd:string" , "Bxg2^^xsd:string" , "Bc6^^xsd:string" , "Nf4^^xsd:string" , "Qc7^^xsd:string" , "Bd1^^xsd:string" , "f5^^xsd:string" , "Nxe2+^^xsd:string" , "Re2^^xsd:string" , "g7^^xsd:string" , "Bxc5^^xsd:string" , "Rae8^^xsd:string" , "Kh3^^xsd:string" , "Ne4^^xsd:string" , "Qxe2^^xsd:string" , "Qb7^^xsd:string" , "c4^^xsd:string" , "Nxa6^^xsd:string" , "Nec5^^xsd:string" , "Na4^^xsd:string" , "Re6^^xsd:string" , "Rfe1^^xsd:string" , "exd5^^xsd:string" , "Kxg7^^xsd:string" , "Qg7^^xsd:string" , "Bf2^^xsd:string" , "Nxc5^^xsd:string" , "Nxd5^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamnsi1cXb> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Fischer, Robert James^^xsd:string" , "Tal, Mihail^^xsd:string" .

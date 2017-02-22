@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/gamZSsHx>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Santa Monica^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Santa Monica^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Larsen, Bent^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamZSsHxj7> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgambSoV5j0> , <http://purl.org/NET/rdfchess/id/hmgamZSsHxj7> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgambSoV5j0> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "C82^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrbSoV5j> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "0-1^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Fischer, Robert James^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgrbSoV5j>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamZSsHx> .
+
+<http://purl.org/NET/rdfchess/id/hmgamZSsHxj7>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Bb3^^xsd:string" , "Nbd2^^xsd:string" , "dxe5^^xsd:string" , "c3^^xsd:string" , "Bf5^^xsd:string" , "d4^^xsd:string" , "Nc6^^xsd:string" , "Nf3^^xsd:string" , "b5^^xsd:string" , "e5^^xsd:string" , "Bc5^^xsd:string" , "Nf6^^xsd:string" , "Nb3^^xsd:string" , "Be6^^xsd:string" , "d5^^xsd:string" , "O-O^^xsd:string" , "Nxe4^^xsd:string" , "Ba4^^xsd:string" , "e4^^xsd:string" , "Bc2^^xsd:string" , "a6^^xsd:string" , "Bb5^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamZSsHxj7> , <http://purl.org/NET/rdfchess/id/hmgambSoV5j0> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Larsen, Bent^^xsd:string" , "Fischer, Robert James^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgambSoV5j0>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Be3^^xsd:string" , "Re1^^xsd:string" , "Qd3^^xsd:string" , "Qf1^^xsd:string" , "c6^^xsd:string" , "Ne6^^xsd:string" , "Bd2^^xsd:string" , "g3^^xsd:string" , "Nc5^^xsd:string" , "Re3^^xsd:string" , "Qh4^^xsd:string" , "b3^^xsd:string" , "Qh3^^xsd:string" , "g4^^xsd:string" , "Bxd3^^xsd:string" , "Qg2^^xsd:string" , "Bg4^^xsd:string" , "Bh6^^xsd:string" , "Bf5^^xsd:string" , "Nxc5^^xsd:string" , "Qxd3^^xsd:string" , "Re8^^xsd:string" , "b4^^xsd:string" , "Nd4^^xsd:string" , "Qc4^^xsd:string" , "Qh6^^xsd:string" , "bxc3^^xsd:string" , "g6^^xsd:string" , "Qd2^^xsd:string" , "Ne7^^xsd:string" , "Bg5^^xsd:string" , "Ng7^^xsd:string" , "Nd3^^xsd:string" , "Nxf5^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgambSoV5j0> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Larsen, Bent^^xsd:string" , "Fischer, Robert James^^xsd:string" .

@@ -1,0 +1,62 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/cgrVIEPa0>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamiIxhg>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "London m-B6263^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "London^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Deacon, Frederic^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamiIxhg9o> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamJKIBD9d> , <http://purl.org/NET/rdfchess/id/hmgamiIxhg9o> , <http://purl.org/NET/rdfchess/id/hmgamVIEPa0g> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamVIEPa0g> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "C33^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrVIEPa0> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Steinitz, William^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamVIEPa0g>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "a3^^xsd:string" , "Bd1^^xsd:string" , "Bxe3^^xsd:string" , "Kxe3^^xsd:string" , "Nbxd5^^xsd:string" , "c4^^xsd:string" , "Nb6^^xsd:string" , "a5^^xsd:string" , "Bd2^^xsd:string" , "fxe3^^xsd:string" , "Kd3^^xsd:string" , "cxd6^^xsd:string" , "Nc6^^xsd:string" , "Bb3^^xsd:string" , "Kg7^^xsd:string" , "g3^^xsd:string" , "a4^^xsd:string" , "Ne3^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamVIEPa0g> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Steinitz, William^^xsd:string" , "Deacon, Frederic^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamJKIBD9d>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "d4^^xsd:string" , "exd5^^xsd:string" , "Nxd6^^xsd:string" , "exf4^^xsd:string" , "Qxf3+^^xsd:string" , "Ne7^^xsd:string" , "Qh4+^^xsd:string" , "Bxf3^^xsd:string" , "Nb5^^xsd:string" , "Bd6^^xsd:string" , "Qh5^^xsd:string" , "Nc3^^xsd:string" , "Kf8^^xsd:string" , "d5^^xsd:string" , "Re1^^xsd:string" , "f4^^xsd:string" , "Kf1^^xsd:string" , "Qxf3^^xsd:string" , "Kf2^^xsd:string" , "Bg4^^xsd:string" , "e5^^xsd:string" , "Nd7^^xsd:string" , "Bc4^^xsd:string" , "Kxf3^^xsd:string" , "g5^^xsd:string" , "Nf3^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamVIEPa0g> , <http://purl.org/NET/rdfchess/id/hmgamJKIBD9d> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Deacon, Frederic^^xsd:string" , "Steinitz, William^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamiIxhg> .
+
+<http://purl.org/NET/rdfchess/id/hmgamiIxhg9o>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "e4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamJKIBD9d> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Steinitz, William^^xsd:string" .

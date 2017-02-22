@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/gamSUzdr>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Santa Monica^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Santa Monica^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Donner, Jan Hein^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamSUzdrl1> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamSUzdrl1> , <http://purl.org/NET/rdfchess/id/hmgamOSvrYk4> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamOSvrYk4> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "C89^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrOSvrYk> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Fischer, Robert James^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamSUzdrl1>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "g3^^xsd:string" , "Be3^^xsd:string" , "b5^^xsd:string" , "Qh3^^xsd:string" , "Qd3^^xsd:string" , "Nxe5^^xsd:string" , "Qf1^^xsd:string" , "a6^^xsd:string" , "Nf6^^xsd:string" , "d5^^xsd:string" , "Re1^^xsd:string" , "Rxe3^^xsd:string" , "c5^^xsd:string" , "Nc6^^xsd:string" , "Nxd5^^xsd:string" , "Bg4^^xsd:string" , "Qh4^^xsd:string" , "c3^^xsd:string" , "Nf3^^xsd:string" , "c6^^xsd:string" , "Be7^^xsd:string" , "Nxe3^^xsd:string" , "Ba4^^xsd:string" , "Rad8^^xsd:string" , "Bd6^^xsd:string" , "d4^^xsd:string" , "Bb3^^xsd:string" , "Qh6^^xsd:string" , "O-O^^xsd:string" , "e4^^xsd:string" , "Nd2^^xsd:string" , "Bb5^^xsd:string" , "e5^^xsd:string" , "Rxe5^^xsd:string" , "exd5^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamOSvrYk4> , <http://purl.org/NET/rdfchess/id/hmgamSUzdrl1> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Fischer, Robert James^^xsd:string" , "Donner, Jan Hein^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamSUzdr> .
+
+<http://purl.org/NET/rdfchess/id/hmgamOSvrYk4>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Rc1^^xsd:string" , "Rd3^^xsd:string" , "Rxc2^^xsd:string" , "bxc3^^xsd:string" , "bxc4^^xsd:string" , "Rc2^^xsd:string" , "Kf8^^xsd:string" , "Bxc1^^xsd:string" , "Rdc3^^xsd:string" , "Qxc1^^xsd:string" , "Qg5^^xsd:string" , "c4^^xsd:string" , "Ke2^^xsd:string" , "Bd3^^xsd:string" , "Qf5^^xsd:string" , "Bxf3^^xsd:string" , "Ba3^^xsd:string" , "Nf3^^xsd:string" , "Qd2^^xsd:string" , "Rxc3^^xsd:string" , "Bxf5^^xsd:string" , "Rxf3^^xsd:string" , "Kf1^^xsd:string" , "Bxc4^^xsd:string" , "cxd4^^xsd:string" , "h6^^xsd:string" , "Rc8^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamOSvrYk4> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Fischer, Robert James^^xsd:string" , "Donner, Jan Hein^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgrOSvrYk>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .

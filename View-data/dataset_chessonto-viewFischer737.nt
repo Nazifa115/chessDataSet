@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/cgrKjrTcv>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamjjhAP> .
+
+<http://purl.org/NET/rdfchess/id/gamjjhAP>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Buenos Aires sim^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Buenos Aires^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Rubinstein, Jose^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamjjhAPvg> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamjjhAPvg> , <http://purl.org/NET/rdfchess/id/hmgamKjrTcv6> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamKjrTcv6> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "B89^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrKjrTcv> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "0-1^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Fischer, Robert James^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamjjhAPvg>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Nce2^^xsd:string" , "b5^^xsd:string" , "Rd2^^xsd:string" , "e5^^xsd:string" , "Qh4^^xsd:string" , "Bf8^^xsd:string" , "Bb3^^xsd:string" , "Be3^^xsd:string" , "gxf5^^xsd:string" , "a6^^xsd:string" , "Qh5^^xsd:string" , "d6^^xsd:string" , "exf5^^xsd:string" , "e6^^xsd:string" , "Qh6^^xsd:string" , "g6^^xsd:string" , "Nd7^^xsd:string" , "b4^^xsd:string" , "Nc3^^xsd:string" , "Nc6^^xsd:string" , "Be7^^xsd:string" , "d4^^xsd:string" , "O-O-O^^xsd:string" , "O-O^^xsd:string" , "Nxb3+^^xsd:string" , "Rfc8^^xsd:string" , "Bxf5^^xsd:string" , "g5^^xsd:string" , "Rhg1^^xsd:string" , "Nxd4^^xsd:string" , "Nf3^^xsd:string" , "Nf5^^xsd:string" , "Bc4^^xsd:string" , "Nf6^^xsd:string" , "axb3^^xsd:string" , "e4^^xsd:string" , "Qc7^^xsd:string" , "Qe2^^xsd:string" , "g4^^xsd:string" , "Nc5^^xsd:string" , "c5^^xsd:string" , "cxd4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamjjhAPvg> , <http://purl.org/NET/rdfchess/id/hmgamKjrTcv6> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Fischer, Robert James^^xsd:string" , "Rubinstein, Jose^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamKjrTcv6>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "a5^^xsd:string" , "Rh6^^xsd:string" , "axb3^^xsd:string" , "e4^^xsd:string" , "Bg7^^xsd:string" , "f4^^xsd:string" , "Qc1^^xsd:string" , "Ra1+^^xsd:string" , "Ke2^^xsd:string" , "Qf2^^xsd:string" , "Kd1^^xsd:string" , "Rc2^^xsd:string" , "Rg3^^xsd:string" , "cxb3^^xsd:string" , "a4^^xsd:string" , "Rh3^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamKjrTcv6> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Rubinstein, Jose^^xsd:string" , "Fischer, Robert James^^xsd:string" .

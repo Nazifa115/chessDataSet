@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/cgrOlBRgH>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamOlBRgHS>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Nb7^^xsd:string" , "bxc5^^xsd:string" , "Nb8^^xsd:string" , "Kf2^^xsd:string" , "Nb6^^xsd:string" , "Kd7^^xsd:string" , "Ndb3^^xsd:string" , "Bf3^^xsd:string" , "Nbc5^^xsd:string" , "Kf8^^xsd:string" , "Bc1^^xsd:string" , "Na5^^xsd:string" , "Nc5^^xsd:string" , "exf4^^xsd:string" , "Bb6^^xsd:string" , "Ke7^^xsd:string" , "Bxc4^^xsd:string" , "h3^^xsd:string" , "f4^^xsd:string" , "Nd7^^xsd:string" , "Be6^^xsd:string" , "Bd3^^xsd:string" , "Kf1^^xsd:string" , "Be4^^xsd:string" , "Bxc5^^xsd:string" , "Bc7^^xsd:string" , "g6^^xsd:string" , "Nfd7^^xsd:string" , "Nd3^^xsd:string" , "Nc4^^xsd:string" , "e5^^xsd:string" , "Bd6^^xsd:string" , "Bxc8^^xsd:string" , "Nxc5^^xsd:string" , "f6^^xsd:string" , "Rxc8+^^xsd:string" , "Nfd4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamOlBRgHS> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Fischer, Robert James^^xsd:string" , "Spassky, Boris V^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamSlGEJ> .
+
+<http://purl.org/NET/rdfchess/id/gamSlGEJ>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "St Stefan/Belgrade m^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Belgrade^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Fischer, Robert James^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamSlGEJIz> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamOlBRgHS> , <http://purl.org/NET/rdfchess/id/hmgamSlGEJIz> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamOlBRgHS> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "D27^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrOlBRgH> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Spassky, Boris V^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamSlGEJIz>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Rfc8^^xsd:string" , "b5^^xsd:string" , "dxc4^^xsd:string" , "a6^^xsd:string" , "Nf3^^xsd:string" , "e3^^xsd:string" , "Nb3^^xsd:string" , "b4^^xsd:string" , "Qxd1^^xsd:string" , "Bxc4^^xsd:string" , "d5^^xsd:string" , "O-O^^xsd:string" , "c4^^xsd:string" , "Bb2^^xsd:string" , "d4^^xsd:string" , "Nbd7^^xsd:string" , "a3^^xsd:string" , "Be2^^xsd:string" , "e6^^xsd:string" , "Be7^^xsd:string" , "Rxc1^^xsd:string" , "Bb7^^xsd:string" , "Rc8^^xsd:string" , "Rac1^^xsd:string" , "Bxc5^^xsd:string" , "Rxd1^^xsd:string" , "Nf6^^xsd:string" , "Nbd2^^xsd:string" , "dxc5^^xsd:string" , "c5^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamOlBRgHS> , <http://purl.org/NET/rdfchess/id/hmgamSlGEJIz> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Fischer, Robert James^^xsd:string" , "Spassky, Boris V^^xsd:string" .

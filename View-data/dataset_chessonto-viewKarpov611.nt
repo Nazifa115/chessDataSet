@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/gam271K0>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Buenos Aires^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Buenos Aires^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Kavalek, Lubomir^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam271K0kx> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam271K0kx> , <http://purl.org/NET/rdfchess/id/hmgamd5XYIkA> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamd5XYIkA> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "B92^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrd5XYIk> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Karpov, Anatoly^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamd5XYIkA>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "e6^^xsd:string" , "Ne5^^xsd:string" , "Bd7^^xsd:string" , "Nfd7^^xsd:string" , "Rxd7^^xsd:string" , "a6^^xsd:string" , "Qc1^^xsd:string" , "O-O^^xsd:string" , "Nd7^^xsd:string" , "Nb3^^xsd:string" , "Be7^^xsd:string" , "Rb8^^xsd:string" , "Nbd7^^xsd:string" , "Qc7^^xsd:string" , "Bf3^^xsd:string" , "Na4^^xsd:string" , "Nxc5^^xsd:string" , "h3^^xsd:string" , "Nc5^^xsd:string" , "Qd4^^xsd:string" , "a4^^xsd:string" , "Qf6^^xsd:string" , "a5^^xsd:string" , "Bd3^^xsd:string" , "Be3^^xsd:string" , "Nxd7^^xsd:string" , "Nb6^^xsd:string" , "Re8^^xsd:string" , "Bc6^^xsd:string" , "Bf1^^xsd:string" , "Qe5^^xsd:string" , "Be2^^xsd:string" , "Rbd8^^xsd:string" , "Nc3^^xsd:string" , "Nf6^^xsd:string" , "dxc5^^xsd:string" , "Re1^^xsd:string" , "Bf4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamd5XYIkA> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov, Anatoly^^xsd:string" , "Kavalek, Lubomir^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgrd5XYIk>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gam271K0> .
+
+<http://purl.org/NET/rdfchess/id/hmgam271K0kx>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "e4^^xsd:string" , "d4^^xsd:string" , "d6^^xsd:string" , "c5^^xsd:string" , "cxd4^^xsd:string" , "Nf3^^xsd:string" , "Nxd4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamd5XYIkA> , <http://purl.org/NET/rdfchess/id/hmgam271K0kx> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov, Anatoly^^xsd:string" , "Kavalek, Lubomir^^xsd:string" .

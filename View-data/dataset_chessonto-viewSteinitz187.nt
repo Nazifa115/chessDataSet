@@ -1,0 +1,62 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/cgrf6gDF6>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamS485L4A>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Nc6^^xsd:string" , "e5^^xsd:string" , "Nf3^^xsd:string" , "e4^^xsd:string" , "Bc4^^xsd:string" , "Bc5^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamS485L4A> , <http://purl.org/NET/rdfchess/id/hmgamO44ik3D> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Zukertort, Johannes Hermann^^xsd:string" , "Steinitz, William^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamO44ik3D>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Rb1^^xsd:string" , "Re1^^xsd:string" , "Nc6^^xsd:string" , "Bxb5^^xsd:string" , "Nxb8^^xsd:string" , "Rxb8^^xsd:string" , "d4^^xsd:string" , "Bxc3^^xsd:string" , "Nbd2^^xsd:string" , "Bxb4^^xsd:string" , "Qa4^^xsd:string" , "O-O^^xsd:string" , "b4^^xsd:string" , "Rxd3^^xsd:string" , "Qb3^^xsd:string" , "Qf6^^xsd:string" , "Re3^^xsd:string" , "b5^^xsd:string" , "a6^^xsd:string" , "Nge7^^xsd:string" , "c3^^xsd:string" , "Nxc6^^xsd:string" , "Qg6^^xsd:string" , "exd4^^xsd:string" , "Qxc6^^xsd:string" , "Bxc6^^xsd:string" , "Rb8^^xsd:string" , "d3^^xsd:string" , "e5^^xsd:string" , "Bb4^^xsd:string" , "Ba5^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamf6gDF6u> , <http://purl.org/NET/rdfchess/id/hmgamO44ik3D> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Steinitz, William^^xsd:string" , "Zukertort, Johannes Hermann^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamS485L> .
+
+<http://purl.org/NET/rdfchess/id/hmgamf6gDF6u>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Nh4^^xsd:string" , "Bb4^^xsd:string" , "Ned5+^^xsd:string" , "Bc5^^xsd:string" , "a4^^xsd:string" , "Nxh7^^xsd:string" , "Nb5^^xsd:string" , "Ba6^^xsd:string" , "Nhg4^^xsd:string" , "Bb2^^xsd:string" , "Bd3^^xsd:string" , "Bc2^^xsd:string" , "Re3^^xsd:string" , "a3^^xsd:string" , "axb3^^xsd:string" , "Bd4^^xsd:string" , "Neg3^^xsd:string" , "Nf6^^xsd:string" , "Ke7^^xsd:string" , "Rxb3^^xsd:string" , "Ne3^^xsd:string" , "Rb3^^xsd:string" , "b4^^xsd:string" , "Nh6+^^xsd:string" , "Rb8^^xsd:string" , "Kf8^^xsd:string" , "Bd2^^xsd:string" , "Bxd4^^xsd:string" , "g6^^xsd:string" , "O-O^^xsd:string" , "Ne4^^xsd:string" , "Ng5^^xsd:string" , "Nf5^^xsd:string" , "Kf1^^xsd:string" , "Nxd4^^xsd:string" , "Ngf5^^xsd:string" , "a5^^xsd:string" , "Kd8^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamf6gDF6u> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Steinitz, William^^xsd:string" , "Zukertort, Johannes Hermann^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamS485L>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "London m^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "London^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Steinitz, William^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamS485L4A> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamf6gDF6u> , <http://purl.org/NET/rdfchess/id/hmgamO44ik3D> , <http://purl.org/NET/rdfchess/id/hmgamS485L4A> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamf6gDF6u> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "C52^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrf6gDF6> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "0-1^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Zukertort, Johannes Hermann^^xsd:string" .

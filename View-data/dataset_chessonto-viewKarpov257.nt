@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gampwSPe> .
+
+<http://purl.org/NET/rdfchess/id/hmgampwSPeNt>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Kf8^^xsd:string" , "cxd5^^xsd:string" , "Bb7^^xsd:string" , "Kf1^^xsd:string" , "Nf3^^xsd:string" , "d5^^xsd:string" , "Rxa1^^xsd:string" , "Bc3^^xsd:string" , "e3^^xsd:string" , "Ke7^^xsd:string" , "Ra8^^xsd:string" , "Rfd1^^xsd:string" , "Be7^^xsd:string" , "Ra1^^xsd:string" , "Rc1^^xsd:string" , "Bxc3^^xsd:string" , "Nxc3^^xsd:string" , "b6^^xsd:string" , "e6^^xsd:string" , "c5^^xsd:string" , "Bf6^^xsd:string" , "dxc5^^xsd:string" , "Bb2^^xsd:string" , "Be2^^xsd:string" , "Rxd8+^^xsd:string" , "bxc4^^xsd:string" , "Rfxd8^^xsd:string" , "Bd6^^xsd:string" , "Be5^^xsd:string" , "Nb4^^xsd:string" , "Bxc5^^xsd:string" , "Rxa7^^xsd:string" , "Bxc4^^xsd:string" , "h6^^xsd:string" , "Nxa2^^xsd:string" , "Rxd8^^xsd:string" , "Nd4^^xsd:string" , "Nxd5^^xsd:string" , "Nf6^^xsd:string" , "c4^^xsd:string" , "Qxd8^^xsd:string" , "Bxa1^^xsd:string" , "Bf1^^xsd:string" , "Bd5^^xsd:string" , "Rc7^^xsd:string" , "O-O^^xsd:string" , "Nc3^^xsd:string" , "Bc4^^xsd:string" , "d4^^xsd:string" , "Rc8^^xsd:string" , "Nc6^^xsd:string" , "b3^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgampwSPeNt> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Averkin, Orest N^^xsd:string" , "Karpov, Anatoly^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gampwSPe>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "URS-ch41^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Moscow^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karpov, Anatoly^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgampwSPeNt> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgampwSPeNt> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgampwSPeNt> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "A30^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrpwSPeN> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Averkin, Orest N^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgrpwSPeN>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .

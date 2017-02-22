@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/cgrV5th3Y>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamu5jZFXr>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "e5^^xsd:string" , "Nf6^^xsd:string" , "e4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamV5th3Yg> , <http://purl.org/NET/rdfchess/id/hmgamu5jZFXr> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Berliner, Hans Jack^^xsd:string" , "Fischer, Robert James^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamu5jZF> .
+
+<http://purl.org/NET/rdfchess/id/gamu5jZF>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "USA-ch^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "New York^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Berliner, Hans Jack^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamu5jZFXr> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamu5jZFXr> , <http://purl.org/NET/rdfchess/id/hmgamV5th3Yg> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamV5th3Yg> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "B03^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrV5th3Y> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1-0^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Fischer, Robert James^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamV5th3Yg>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Ng3^^xsd:string" , "f5^^xsd:string" , "Rxh6+^^xsd:string" , "Nge2^^xsd:string" , "g6^^xsd:string" , "exd6^^xsd:string" , "Qe2^^xsd:string" , "b3^^xsd:string" , "Nxd3^^xsd:string" , "Qb5^^xsd:string" , "d4^^xsd:string" , "Nc6^^xsd:string" , "h6^^xsd:string" , "f4^^xsd:string" , "Bxf6^^xsd:string" , "Ng1^^xsd:string" , "Nh5+^^xsd:string" , "Bd3^^xsd:string" , "Rxf7^^xsd:string" , "Qc4^^xsd:string" , "Ba8^^xsd:string" , "Ne2^^xsd:string" , "Rad1^^xsd:string" , "Nb4^^xsd:string" , "h4^^xsd:string" , "fxe5^^xsd:string" , "Bd7^^xsd:string" , "Nf6^^xsd:string" , "gxh5^^xsd:string" , "Rxa7^^xsd:string" , "Bg5^^xsd:string" , "Bd8^^xsd:string" , "dxe5^^xsd:string" , "Kh8^^xsd:string" , "Bg7^^xsd:string" , "Nf5^^xsd:string" , "e5^^xsd:string" , "Nxf4^^xsd:string" , "Be4^^xsd:string" , "Nc3^^xsd:string" , "Nd5^^xsd:string" , "Qf8^^xsd:string" , "d6^^xsd:string" , "Kg8^^xsd:string" , "d5^^xsd:string" , "b4^^xsd:string" , "Kh1^^xsd:string" , "Nd7^^xsd:string" , "Rf7^^xsd:string" , "Ba1^^xsd:string" , "Nb6^^xsd:string" , "Rd6^^xsd:string" , "c4^^xsd:string" , "Bc6^^xsd:string" , "O-O^^xsd:string" , "b6^^xsd:string" , "Qd2^^xsd:string" , "Be3^^xsd:string" , "bxc5^^xsd:string" , "Bd4^^xsd:string" , "Rf8^^xsd:string" , "Rd7^^xsd:string" , "Re8^^xsd:string" , "Rxh5^^xsd:string" , "Kg7^^xsd:string" , "cxd6^^xsd:string" , "Rg5+^^xsd:string" , "Qxd6^^xsd:string" , "Bxc6^^xsd:string" , "Qxc6^^xsd:string" , "c6^^xsd:string" , "Qxd3^^xsd:string" , "c5^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamV5th3Yg> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Berliner, Hans Jack^^xsd:string" , "Fischer, Robert James^^xsd:string" .

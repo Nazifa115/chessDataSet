@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/hmgam6orgIFA>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Qg6^^xsd:string" , "fxe6^^xsd:string" , "b5^^xsd:string" , "dxe6^^xsd:string" , "Qe3^^xsd:string" , "Nc4^^xsd:string" , "Nd3^^xsd:string" , "Rbd1^^xsd:string" , "b3^^xsd:string" , "e4^^xsd:string" , "d5^^xsd:string" , "Ne5^^xsd:string" , "c4^^xsd:string" , "Qf3^^xsd:string" , "Rab8^^xsd:string" , "f4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam6orgIFA> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Glienke, Manfred^^xsd:string" , "Karpov, Anatoly^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamTqv3b>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Hannover^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Hannover^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karpov, Anatoly^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamTqv3bGx> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamTqv3bGx> , <http://purl.org/NET/rdfchess/id/hmgam6orgIFA> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam6orgIFA> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "A46^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgr6orgIF> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "0-1^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Glienke, Manfred^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamTqv3b> .
+
+<http://purl.org/NET/rdfchess/id/hmgamTqv3bGx>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Qe4^^xsd:string" , "e6^^xsd:string" , "Nc4^^xsd:string" , "Ng7^^xsd:string" , "Nd2^^xsd:string" , "h3^^xsd:string" , "Be7^^xsd:string" , "Nc6^^xsd:string" , "Nxf1^^xsd:string" , "Bf4^^xsd:string" , "Ne8^^xsd:string" , "Nf3^^xsd:string" , "Bxf1^^xsd:string" , "N1d2^^xsd:string" , "Ba6^^xsd:string" , "Nf6^^xsd:string" , "g5^^xsd:string" , "Rc8^^xsd:string" , "Rb1^^xsd:string" , "d6^^xsd:string" , "Bxg5^^xsd:string" , "Rfe1^^xsd:string" , "Qc2^^xsd:string" , "Na5^^xsd:string" , "Qe2^^xsd:string" , "Qc8^^xsd:string" , "Nh2^^xsd:string" , "Rad1^^xsd:string" , "c3^^xsd:string" , "h5^^xsd:string" , "Qb7^^xsd:string" , "Nce5^^xsd:string" , "e3^^xsd:string" , "Nbd2^^xsd:string" , "Qxh5^^xsd:string" , "b6^^xsd:string" , "Ndf1^^xsd:string" , "d4^^xsd:string" , "Ng4^^xsd:string" , "c5^^xsd:string" , "O-O^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam6orgIFA> , <http://purl.org/NET/rdfchess/id/hmgamTqv3bGx> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov, Anatoly^^xsd:string" , "Glienke, Manfred^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgr6orgIF>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .

@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/gamcISnI>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Bad Lauterberg^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Bad Lauterberg^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karpov, Anatoly^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamcISnIB9> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamcISnIB9> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamcISnIB9> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "E04^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrcISnIB> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Furman, Semen Abramovich^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamcISnI> .
+
+<http://purl.org/NET/rdfchess/id/cgrcISnIB>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamcISnIB9>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Be7^^xsd:string" , "Nbd2^^xsd:string" , "Ne5^^xsd:string" , "Bc6^^xsd:string" , "Nf6^^xsd:string" , "Bg5^^xsd:string" , "Bd7^^xsd:string" , "d4^^xsd:string" , "dxc4^^xsd:string" , "Bxg2^^xsd:string" , "Nb6^^xsd:string" , "Qd5+^^xsd:string" , "g3^^xsd:string" , "Nxc4^^xsd:string" , "Nf3^^xsd:string" , "c4^^xsd:string" , "Bg2^^xsd:string" , "Qa4+^^xsd:string" , "Kxg2^^xsd:string" , "d5^^xsd:string" , "Qxd5^^xsd:string" , "O-O^^xsd:string" , "Qxc4^^xsd:string" , "Nbd7^^xsd:string" , "Rfd1^^xsd:string" , "c6^^xsd:string" , "e6^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamcISnIB9> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov, Anatoly^^xsd:string" , "Furman, Semen Abramovich^^xsd:string" .

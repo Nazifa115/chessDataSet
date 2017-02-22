@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/cgrFUmj6h>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gameSa1J> .
+
+<http://purl.org/NET/rdfchess/id/hmgamFUmj6hs>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Ne5^^xsd:string" , "Nc6^^xsd:string" , "Bxe5^^xsd:string" , "Ra5^^xsd:string" , "Bd5^^xsd:string" , "Qe4^^xsd:string" , "Rf8^^xsd:string" , "f4^^xsd:string" , "Bf3^^xsd:string" , "Rc1^^xsd:string" , "Be6^^xsd:string" , "Qb3^^xsd:string" , "Qxc1+^^xsd:string" , "Bf4^^xsd:string" , "Nxe5^^xsd:string" , "Qc2^^xsd:string" , "Nf6^^xsd:string" , "Kg7^^xsd:string" , "Rc8^^xsd:string" , "Qe2^^xsd:string" , "Qxa7^^xsd:string" , "Kh8^^xsd:string" , "Ncxe5^^xsd:string" , "Nc4^^xsd:string" , "dxe5^^xsd:string" , "Rc5^^xsd:string" , "Rxb5^^xsd:string" , "Kg8^^xsd:string" , "Rf7^^xsd:string" , "e5^^xsd:string" , "Rxd5^^xsd:string" , "Bd2^^xsd:string" , "Nxe7^^xsd:string" , "Qa4^^xsd:string" , "fxe5^^xsd:string" , "Qa5^^xsd:string" , "Nc5^^xsd:string" , "Qh4^^xsd:string" , "Qb1^^xsd:string" , "h4^^xsd:string" , "Qe3^^xsd:string" , "cxb5^^xsd:string" , "d6^^xsd:string" , "Kxf7^^xsd:string" , "e4^^xsd:string" , "Nfd7^^xsd:string" , "a4^^xsd:string" , "Ba8^^xsd:string" , "Na5^^xsd:string" , "Qd4^^xsd:string" , "Nd5^^xsd:string" , "Rf4^^xsd:string" , "Rfe8^^xsd:string" , "f3^^xsd:string" , "O-O^^xsd:string" , "b5^^xsd:string" , "Bxc1^^xsd:string" , "Rxe7^^xsd:string" , "Be2^^xsd:string" , "Ne3^^xsd:string" , "Nf7^^xsd:string" , "Rxa4^^xsd:string" , "h3^^xsd:string" , "Nd7^^xsd:string" , "Bxd5+^^xsd:string" , "Rfa8^^xsd:string" , "Qh6+^^xsd:string" , "Rxf7^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamFUmj6hs> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Fischer, Robert James^^xsd:string" , "Quinteros, Miguel A^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgameSa1JhB>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "d4^^xsd:string" , "Bxc3+^^xsd:string" , "Nxd4^^xsd:string" , "Bg7^^xsd:string" , "Nc2^^xsd:string" , "g6^^xsd:string" , "Nf3^^xsd:string" , "c4^^xsd:string" , "bxc3^^xsd:string" , "cxd4^^xsd:string" , "Nc6^^xsd:string" , "c5^^xsd:string" , "Nc3^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamFUmj6hs> , <http://purl.org/NET/rdfchess/id/hmgameSa1JhB> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Fischer, Robert James^^xsd:string" , "Quinteros, Miguel A^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gameSa1J>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Buenos Aires^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Buenos Aires^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Fischer, Robert James^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgameSa1JhB> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgameSa1JhB> , <http://purl.org/NET/rdfchess/id/hmgamFUmj6hs> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamFUmj6hs> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "A35^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrFUmj6h> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "0-1^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Quinteros, Miguel A^^xsd:string" .

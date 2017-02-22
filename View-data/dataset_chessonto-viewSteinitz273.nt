@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/hmgamGKtTEt1>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "g6^^xsd:string" , "Be3^^xsd:string" , "d6^^xsd:string" , "Bc4^^xsd:string" , "Bd5^^xsd:string" , "b5^^xsd:string" , "Nxd5^^xsd:string" , "e5^^xsd:string" , "Nd4^^xsd:string" , "Nf3^^xsd:string" , "Bg7^^xsd:string" , "O-O^^xsd:string" , "Kb1^^xsd:string" , "Nf6^^xsd:string" , "e4^^xsd:string" , "Qe2^^xsd:string" , "Nc6^^xsd:string" , "a6^^xsd:string" , "d3^^xsd:string" , "Nc3^^xsd:string" , "O-O-O^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamGKtTEt1> , <http://purl.org/NET/rdfchess/id/hmgamSKp8es4> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Schwarz, Adolf^^xsd:string" , "Steinitz, William^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgrSKp8es>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamGKtTE> .
+
+<http://purl.org/NET/rdfchess/id/hmgamSKp8es4>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Qe3^^xsd:string" , "c6^^xsd:string" , "dxc3^^xsd:string" , "Qf6^^xsd:string" , "a4^^xsd:string" , "Kb1^^xsd:string" , "Qf4^^xsd:string" , "Qd2^^xsd:string" , "Nf4^^xsd:string" , "Qc5^^xsd:string" , "Nc1^^xsd:string" , "Ned4^^xsd:string" , "Qd8^^xsd:string" , "c4^^xsd:string" , "Qa5^^xsd:string" , "h3^^xsd:string" , "Qb4^^xsd:string" , "c3^^xsd:string" , "Ne2^^xsd:string" , "Qb6^^xsd:string" , "c5^^xsd:string" , "exd4^^xsd:string" , "Ka1^^xsd:string" , "Ng3^^xsd:string" , "Rde1^^xsd:string" , "Qc1^^xsd:string" , "b4^^xsd:string" , "a5^^xsd:string" , "Rfe8^^xsd:string" , "g4^^xsd:string" , "Bb7^^xsd:string" , "b3^^xsd:string" , "Bxd4^^xsd:string" , "bxc3^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamSKp8es4> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Steinitz, William^^xsd:string" , "Schwarz, Adolf^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamGKtTE>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Vienna^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Vienna^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Steinitz, William^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamGKtTEt1> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamGKtTEt1> , <http://purl.org/NET/rdfchess/id/hmgamSKp8es4> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamSKp8es4> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "C46^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrSKp8es> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "0-1^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Schwarz, Adolf^^xsd:string" .

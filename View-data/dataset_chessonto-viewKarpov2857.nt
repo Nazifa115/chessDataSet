@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/cgr4JtSzm>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gam4JtSz> .
+
+<http://purl.org/NET/rdfchess/id/gam4JtSz>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Gligoric 83rd g/20 Match^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Novi Sad SCG^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karpov,Ana^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam4JtSzmh> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam4JtSzmh> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam4JtSzmh> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "E14^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgr4JtSzm> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Portisch,L^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgam4JtSzmh>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Qxb2^^xsd:string" , "Be7^^xsd:string" , "d4^^xsd:string" , "Nxd5^^xsd:string" , "Bd3^^xsd:string" , "d5^^xsd:string" , "Bxc5^^xsd:string" , "c4^^xsd:string" , "Qe2^^xsd:string" , "Ne4^^xsd:string" , "e6^^xsd:string" , "Bb2^^xsd:string" , "Nbd7^^xsd:string" , "Qe7^^xsd:string" , "O-O^^xsd:string" , "Bxb2^^xsd:string" , "c5^^xsd:string" , "b6^^xsd:string" , "b4^^xsd:string" , "h3^^xsd:string" , "Nxc5^^xsd:string" , "cxd5^^xsd:string" , "Nf6^^xsd:string" , "Rac8^^xsd:string" , "b3^^xsd:string" , "Bd6^^xsd:string" , "Bb7^^xsd:string" , "Rac1^^xsd:string" , "dxc5^^xsd:string" , "Rfd1^^xsd:string" , "h6^^xsd:string" , "Nf3^^xsd:string" , "Bf6^^xsd:string" , "e3^^xsd:string" , "a3^^xsd:string" , "Nbd2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam4JtSzmh> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Portisch,L^^xsd:string" , "Karpov,Ana^^xsd:string" .

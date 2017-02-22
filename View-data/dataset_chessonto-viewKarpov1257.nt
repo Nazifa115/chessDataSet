@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/cgrashUiJ>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamashUi> .
+
+<http://purl.org/NET/rdfchess/id/gamashUi>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Zuerich sim^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Zuerich^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Gallati, Marcel^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamashUiJn> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamashUiJn> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamashUiJn> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "E81^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrashUiJ> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1-0^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Karpov, Anatoly^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamashUiJn>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "f3^^xsd:string" , "exf3^^xsd:string" , "Nc5^^xsd:string" , "Nxe7^^xsd:string" , "Bd4^^xsd:string" , "d6^^xsd:string" , "Nb5^^xsd:string" , "g6^^xsd:string" , "Ke3^^xsd:string" , "a5^^xsd:string" , "e4^^xsd:string" , "h5^^xsd:string" , "Nc3^^xsd:string" , "Bxf2+^^xsd:string" , "b6^^xsd:string" , "Bxf3^^xsd:string" , "Kxf2^^xsd:string" , "Nf2^^xsd:string" , "d4^^xsd:string" , "Bg7^^xsd:string" , "Rxd1^^xsd:string" , "Be2^^xsd:string" , "Rh8^^xsd:string" , "g4^^xsd:string" , "Kd7^^xsd:string" , "Nc7^^xsd:string" , "Rb1^^xsd:string" , "Rxd8^^xsd:string" , "Na7^^xsd:string" , "c4^^xsd:string" , "dxc5^^xsd:string" , "Nc6^^xsd:string" , "Nd7^^xsd:string" , "Bxc5^^xsd:string" , "O-O^^xsd:string" , "Nd5^^xsd:string" , "Bxe7^^xsd:string" , "Qxd8^^xsd:string" , "Bxb2^^xsd:string" , "Be3^^xsd:string" , "c5^^xsd:string" , "Nxe7+^^xsd:string" , "Rd8+^^xsd:string" , "Nf6^^xsd:string" , "f5^^xsd:string" , "Kf8^^xsd:string" , "Rd1^^xsd:string" , "fxe4^^xsd:string" , "Ke7^^xsd:string" , "Rb8^^xsd:string" , "Nh3^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamashUiJn> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Gallati, Marcel^^xsd:string" , "Karpov, Anatoly^^xsd:string" .

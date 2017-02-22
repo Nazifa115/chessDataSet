@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/cgrWYsbhn>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamLYvYKlz>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "g4^^xsd:string" , "h3^^xsd:string" , "Qd2^^xsd:string" , "e4^^xsd:string" , "Qe1^^xsd:string" , "Bxf6^^xsd:string" , "e6^^xsd:string" , "Rc1^^xsd:string" , "Qe2^^xsd:string" , "Bg5^^xsd:string" , "Nb5^^xsd:string" , "d4^^xsd:string" , "d6^^xsd:string" , "Bh6^^xsd:string" , "Na7^^xsd:string" , "Ng6^^xsd:string" , "dxe6^^xsd:string" , "gxf3^^xsd:string" , "Qxb4^^xsd:string" , "Qh4^^xsd:string" , "Qa4^^xsd:string" , "Nf7^^xsd:string" , "g5^^xsd:string" , "h5^^xsd:string" , "Kb7^^xsd:string" , "Qf2+^^xsd:string" , "Kb8^^xsd:string" , "Rc8^^xsd:string" , "cxd4^^xsd:string" , "Nf4^^xsd:string" , "fxe6^^xsd:string" , "Be8^^xsd:string" , "Qe7^^xsd:string" , "Qf2^^xsd:string" , "Nc2^^xsd:string" , "Ka7^^xsd:string" , "f4^^xsd:string" , "e5^^xsd:string" , "Bg7^^xsd:string" , "Na3^^xsd:string" , "a6^^xsd:string" , "Qxf6^^xsd:string" , "b4^^xsd:string" , "c3^^xsd:string" , "Qxf3^^xsd:string" , "h6^^xsd:string" , "Rd1^^xsd:string" , "Bc4^^xsd:string" , "Nxh8^^xsd:string" , "d5^^xsd:string" , "Rdf1^^xsd:string" , "Bxf3^^xsd:string" , "Kh1^^xsd:string" , "Qxd4+^^xsd:string" , "O-O-O^^xsd:string" , "Qd8^^xsd:string" , "Nc3^^xsd:string" , "Rxf3^^xsd:string" , "Bd3^^xsd:string" , "Rfg8^^xsd:string" , "Rb1^^xsd:string" , "O-O^^xsd:string" , "Bc6^^xsd:string" , "Qf6^^xsd:string" , "Nf6^^xsd:string" , "Nd4^^xsd:string" , "Bd7^^xsd:string" , "Nd8+^^xsd:string" , "Rdf8^^xsd:string" , "b6^^xsd:string" , "Nge2^^xsd:string" , "Qxh5^^xsd:string" , "Nc6^^xsd:string" , "Bxd4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamWYsbhnS> , <http://purl.org/NET/rdfchess/id/hmgamLYvYKlz> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Anand, Viswanathan^^xsd:string" , "Karpov, Anatoly^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamLYvYK> .
+
+<http://purl.org/NET/rdfchess/id/hmgamWYsbhnS>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Nxe6^^xsd:string" , "Kb8^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamWYsbhnS> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Anand, Viswanathan^^xsd:string" , "Karpov, Anatoly^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamLYvYK>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "FIDE-Wch k.o. f^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Lausanne^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karpov, Anatoly^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamLYvYKlz> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamLYvYKlz> , <http://purl.org/NET/rdfchess/id/hmgamWYsbhnS> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamWYsbhnS> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "A45^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrWYsbhn> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1-0^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Anand, Viswanathan^^xsd:string" .

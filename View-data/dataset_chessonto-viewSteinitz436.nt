@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/hmgam62x8b9a>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Bf8^^xsd:string" , "Re8^^xsd:string" , "Qe1+^^xsd:string" , "Qc2^^xsd:string" , "f4^^xsd:string" , "Rxe5^^xsd:string" , "Rxd8^^xsd:string" , "Qd3^^xsd:string" , "Bd7^^xsd:string" , "Qxd5^^xsd:string" , "a6^^xsd:string" , "f5^^xsd:string" , "exd4^^xsd:string" , "Qxa4^^xsd:string" , "d5^^xsd:string" , "d6^^xsd:string" , "Bxf2^^xsd:string" , "b5^^xsd:string" , "Nd1^^xsd:string" , "c6^^xsd:string" , "Bc5^^xsd:string" , "Bf4^^xsd:string" , "Nc6^^xsd:string" , "exd5^^xsd:string" , "Qf6^^xsd:string" , "Qb3^^xsd:string" , "Qe6^^xsd:string" , "Bxd8^^xsd:string" , "Ne4^^xsd:string" , "Rd1^^xsd:string" , "Ba4^^xsd:string" , "Nbd2^^xsd:string" , "Ne3^^xsd:string" , "h4^^xsd:string" , "d4^^xsd:string" , "Be7^^xsd:string" , "Qxd4^^xsd:string" , "Re5^^xsd:string" , "Bxe5^^xsd:string" , "Bb5^^xsd:string" , "e5^^xsd:string" , "Rd8^^xsd:string" , "Nxd4^^xsd:string" , "c3^^xsd:string" , "Re1^^xsd:string" , "Bxa4^^xsd:string" , "Nf3^^xsd:string" , "O-O^^xsd:string" , "Nxf2^^xsd:string" , "h3^^xsd:string" , "Kh2^^xsd:string" , "Nf1^^xsd:string" , "Qg6^^xsd:string" , "h5^^xsd:string" , "b3^^xsd:string" , "Bc7^^xsd:string" , "Nf6^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam62x8b9a> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Walbrodt, Carl August^^xsd:string" , "Steinitz, William^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamEZnOP>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Hastings^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Hastings^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Steinitz, William^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamEZnOP9l> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam62x8b9a> , <http://purl.org/NET/rdfchess/id/hmgamEZnOP9l> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam62x8b9a> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "C87^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgr62x8b9> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "0-1^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Walbrodt, Carl August^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamEZnOP> .
+
+<http://purl.org/NET/rdfchess/id/hmgamEZnOP9l>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "e4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgam62x8b9a> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Walbrodt, Carl August^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgr62x8b9>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .

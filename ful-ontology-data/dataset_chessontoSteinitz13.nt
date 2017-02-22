@@ -1,0 +1,127 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/hmgamL3aqkII>
+        a                       <http://purl.org/NET/rdfchess/chessonto:HalfMove> ;
+        rdfs:providesAgentRole  <http://purl.org/NET/rdfchess/id/rolhgL3aqkIIu> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasSANRecord>
+                "Nf6^^xsd:string" , "exd4^^xsd:string" , "e4^^xsd:string" , "e5^^xsd:string" , "Nc6^^xsd:string" , "Nf3^^xsd:string" , "O-O^^xsd:string" , "Bc4^^xsd:string" , "Bc5^^xsd:string" , "d4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamL3aqkII> , <http://purl.org/NET/rdfchess/id/hmgamW37ESJM> .
+
+<http://purl.org/NET/rdfchess/chessonto:BlackPlayerRole>
+        rdfs:subClassOf  <http://purl.org/NET/rdfchess/chessonto:AgentRole> ;
+        <http://purl.org/NET/rdfchess/chessonto:performedBy>
+                <http://purl.org/NET/rdfchess/id/agL3aqkI> .
+
+<http://purl.org/NET/rdfchess/id/opek319YH>
+        a       <http://purl.org/NET/rdfchess/chessonto:ChessOpening> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasECOCode>
+                <C55^^xsd:string> .
+
+<http://purl.org/NET/rdfchess/id/rolhg2IOnIyO5>
+        a       <http://purl.org/NET/rdfchess/chessonto:ActingPlayerRole> ;
+        <http://purl.org/NET/rdfchess/chessonto:performedBy>
+                <http://purl.org/NET/rdfchess/id/agL3aqkI> .
+
+<http://purl.org/NET/rdfchess/id/rol2IOnIy>
+        a       <http://purl.org/NET/rdfchess/chessonto:AuthorRole> ;
+        <http://purl.org/NET/rdfchess/chessonto:performedBy>
+                <http://purl.org/NET/rdfchess/id/ag2IOnIy> .
+
+<http://purl.org/NET/rdfchess/id/gamk319Y>
+        a                       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        rdfs:providesAgentRole  <http://purl.org/NET/rdfchess/id/rolk319YH> ;
+        <http://purl.org/NET/rdfchess/chessonto:atPlace>
+                <http://purl.org/NET/rdfchess/id/plak319YH> ;
+        <http://purl.org/NET/rdfchess/chessonto:atTime>
+                "1860.??.??^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamL3aqkII> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamL3aqkII> , <http://purl.org/NET/rdfchess/id/hmgamW37ESJM> , <http://purl.org/NET/rdfchess/id/hmgamQIT00yL> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamQIT00yL> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasOpening>
+                <http://purl.org/NET/rdfchess/id/opek319YH> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgr2IOnIy> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasResult>
+                <http://purl.org/NET/rdfchess/id/resk319YHS> ;
+        sem:subEventOf          <http://purl.org/NET/rdfchess/id/touk319Y> .
+
+<http://purl.org/NET/rdfchess/chessonto:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamk319Y> .
+
+<http://purl.org/NET/rdfchess/chessonto:ActingPlayerRole>
+        rdfs:subClassOf  <http://purl.org/NET/rdfchess/chessonto:AgentRole> .
+
+<http://purl.org/NET/rdfchess/id/rolk319YH>
+        a       <http://purl.org/NET/rdfchess/chessonto:BlackPlayerRole> , <http://purl.org/NET/rdfchess/chessonto:WhitePlayerRole> .
+
+<http://purl.org/NET/rdfchess/id/agL3aqkI>
+        a       <http://purl.org/NET/rdfchess/chessonto:Agent> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasName>
+                "Meitner, Philipp^^xsd:string" , "Steinitz, William^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/rolhgL3aqkIIu>
+        a       <http://purl.org/NET/rdfchess/chessonto:ActingPlayerRole> ;
+        <http://purl.org/NET/rdfchess/chessonto:performedBy>
+                <http://purl.org/NET/rdfchess/id/agL3aqkI> .
+
+<http://purl.org/NET/rdfchess/id/touk319Y>
+        a       <http://purl.org/NET/rdfchess/chessonto:ChessTournament> ;
+        <http://purl.org/NET/rdfchess/chessonto:atPlace>
+                <http://purl.org/NET/rdfchess/id/plak319YH> ;
+        <http://purl.org/NET/rdfchess/chessonto:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto:hasName>
+                "Vienna^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/plak319YH>
+        a       <http://purl.org/NET/rdfchess/chessonto:Place> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasName>
+                "Vienna^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgr2IOnIy>
+        a                       <http://purl.org/NET/rdfchess/chessonto:ChessGameReport> ;
+        rdfs:providesAgentRole  <http://purl.org/NET/rdfchess/id/rol2IOnIy> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasPGNFile>
+                "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/rolhgW37ESJMF>
+        a       <http://purl.org/NET/rdfchess/chessonto:ActingPlayerRole> ;
+        <http://purl.org/NET/rdfchess/chessonto:performedBy>
+                <http://purl.org/NET/rdfchess/id/agL3aqkI> .
+
+<http://purl.org/NET/rdfchess/id/rolhgQIT00yLT>
+        a       <http://purl.org/NET/rdfchess/chessonto:ActingPlayerRole> ;
+        <http://purl.org/NET/rdfchess/chessonto:performedBy>
+                <http://purl.org/NET/rdfchess/id/agL3aqkI> .
+
+<http://purl.org/NET/rdfchess/id/resk319YHS>
+        a       <http://purl.org/NET/rdfchess/chessonto:ChessGameResult> ;
+        <http://purl.org/NET/rdfchess/chessonto:encodedAsSAN>
+                <1-0^^xsd:string> .
+
+<http://purl.org/NET/rdfchess/id/hmgamQIT00yL>
+        a                       <http://purl.org/NET/rdfchess/chessonto:HalfMove> ;
+        rdfs:providesAgentRole  <http://purl.org/NET/rdfchess/id/rolhgQIT00yLT> , <http://purl.org/NET/rdfchess/id/rolhg2IOnIyO5> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasSANRecord>
+                "Nge6+^^xsd:string" , "Qxc4^^xsd:string" , "Qd3+^^xsd:string" , "Qd6^^xsd:string" , "Qb3^^xsd:string" , "Nxg4^^xsd:string" , "Qxg4^^xsd:string" , "Kf7^^xsd:string" , "Qg5+^^xsd:string" , "Qb6^^xsd:string" , "Ng5+^^xsd:string" , "f4^^xsd:string" , "Ne5^^xsd:string" , "Kf6^^xsd:string" , "Kg6^^xsd:string" , "Qh3+^^xsd:string" , "Qxg7#^^xsd:string" , "Kh5^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamQIT00yL> .
+
+<http://purl.org/NET/rdfchess/id/hmgamW37ESJM>
+        a                       <http://purl.org/NET/rdfchess/chessonto:HalfMove> ;
+        rdfs:providesAgentRole  <http://purl.org/NET/rdfchess/id/rolhgW37ESJMF> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasSANRecord>
+                "Kf7^^xsd:string" , "Be7^^xsd:string" , "Nd5^^xsd:string" , "Qe2^^xsd:string" , "Re1+^^xsd:string" , "Qd8^^xsd:string" , "Ng5^^xsd:string" , "Nc3^^xsd:string" , "Qf5^^xsd:string" , "Ndxc7+^^xsd:string" , "exf6^^xsd:string" , "Qd7^^xsd:string" , "fxe6^^xsd:string" , "Nxe6^^xsd:string" , "Qxf6^^xsd:string" , "d5^^xsd:string" , "Rxe6+^^xsd:string" , "g4^^xsd:string" , "dxc4^^xsd:string" , "Be6^^xsd:string" , "Qd5^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamW37ESJM> , <http://purl.org/NET/rdfchess/id/hmgamQIT00yL> .
+
+<http://purl.org/NET/rdfchess/chessonto:WhitePlayerRole>
+        rdfs:subClassOf  <http://purl.org/NET/rdfchess/chessonto:AgentRole> ;
+        <http://purl.org/NET/rdfchess/chessonto:performedBy>
+                <http://purl.org/NET/rdfchess/id/agL3aqkI> .

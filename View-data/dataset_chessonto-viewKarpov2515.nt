@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/hmgamItwlf7g>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Kf8^^xsd:string" , "Nd2^^xsd:string" , "c5^^xsd:string" , "Ngf6^^xsd:string" , "d4^^xsd:string" , "b3^^xsd:string" , "Bd3^^xsd:string" , "Qe2^^xsd:string" , "Qf4^^xsd:string" , "Be4^^xsd:string" , "e6^^xsd:string" , "e4^^xsd:string" , "b6^^xsd:string" , "Qxe4^^xsd:string" , "Ng5^^xsd:string" , "c6^^xsd:string" , "Nxe4^^xsd:string" , "Be7^^xsd:string" , "Ne4^^xsd:string" , "Bd6^^xsd:string" , "Nd7^^xsd:string" , "Qh4^^xsd:string" , "d5^^xsd:string" , "h6^^xsd:string" , "Rb8^^xsd:string" , "dxe4^^xsd:string" , "Qc7^^xsd:string" , "N1f3^^xsd:string" , "O-O^^xsd:string" , "Qg4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamItwlf7g> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov,An^^xsd:string" , "Leitao,R^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamItwlf> .
+
+<http://purl.org/NET/rdfchess/id/gamItwlf>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Super Final^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Buenos Aires ARG^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karpov,An^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamItwlf7g> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamItwlf7g> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamItwlf7g> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "B17^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrItwlf7> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Leitao,R^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/cgrItwlf7>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .

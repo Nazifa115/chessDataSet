@@ -1,0 +1,44 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamJ5B1k> .
+
+<http://purl.org/NET/rdfchess/id/cgrJ5B1kh>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamJ5B1khK>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Bf1^^xsd:string" , "Nxd4^^xsd:string" , "Rfd1^^xsd:string" , "a4^^xsd:string" , "b5^^xsd:string" , "Nc6^^xsd:string" , "b6^^xsd:string" , "Bxd4^^xsd:string" , "Qc7^^xsd:string" , "h3^^xsd:string" , "Nge2^^xsd:string" , "Rb8^^xsd:string" , "Be6^^xsd:string" , "d4^^xsd:string" , "g3^^xsd:string" , "O-O^^xsd:string" , "g6^^xsd:string" , "d6^^xsd:string" , "b4^^xsd:string" , "cxd4^^xsd:string" , "Ne6^^xsd:string" , "Nf6^^xsd:string" , "a6^^xsd:string" , "Qxd4^^xsd:string" , "Rb1^^xsd:string" , "Nxa4^^xsd:string" , "Bg7^^xsd:string" , "e4^^xsd:string" , "e5^^xsd:string" , "c5^^xsd:string" , "Nd4^^xsd:string" , "d3^^xsd:string" , "Nc7^^xsd:string" , "Ne8^^xsd:string" , "c4^^xsd:string" , "Qd3^^xsd:string" , "bxa4^^xsd:string" , "Ne2^^xsd:string" , "Be3^^xsd:string" , "Nc3^^xsd:string" , "Nxe2+^^xsd:string" , "Qxe2^^xsd:string" , "Bg2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamJ5B1khK> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Szabo, Laszlo^^xsd:string" , "Fischer, Robert James^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamJ5B1k>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Buenos Aires^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Buenos Aires^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Fischer, Robert James^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamJ5B1khK> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamJ5B1khK> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamJ5B1khK> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "A36^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrJ5B1kh> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "1/2-1/2^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Szabo, Laszlo^^xsd:string" .

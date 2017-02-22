@@ -1,0 +1,93 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/plaPYp50S>
+        a       <http://purl.org/NET/rdfchess/chessonto:Place> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasName>
+                "Linares^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamPYp50SB>
+        a                       <http://purl.org/NET/rdfchess/chessonto:HalfMove> ;
+        rdfs:providesAgentRole  <http://purl.org/NET/rdfchess/id/rolhgPYp50SBx> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasSANRecord>
+                "Nxd4^^xsd:string" , "c4^^xsd:string" , "Nc6^^xsd:string" , "Nxd2^^xsd:string" , "Rc8^^xsd:string" , "Qxa6^^xsd:string" , "Rc2^^xsd:string" , "Rb1^^xsd:string" , "Bd7^^xsd:string" , "e6^^xsd:string" , "Bc6^^xsd:string" , "a4^^xsd:string" , "g6^^xsd:string" , "Nf6^^xsd:string" , "d6^^xsd:string" , "Rfd8^^xsd:string" , "dxe6^^xsd:string" , "b5^^xsd:string" , "Rac1^^xsd:string" , "Bd2^^xsd:string" , "Kg2^^xsd:string" , "Re2^^xsd:string" , "Nf3^^xsd:string" , "cxd4^^xsd:string" , "b3^^xsd:string" , "Re1^^xsd:string" , "Ra1^^xsd:string" , "Bb7^^xsd:string" , "d4^^xsd:string" , "c5^^xsd:string" , "bxc4^^xsd:string" , "a6^^xsd:string" , "h3^^xsd:string" , "Qd8^^xsd:string" , "Bf6^^xsd:string" , "Kg7^^xsd:string" , "Rf8^^xsd:string" , "Kxf6^^xsd:string" , "Ne4^^xsd:string" , "Rc5^^xsd:string" , "Qf5^^xsd:string" , "Rxf6^^xsd:string" , "Qa5^^xsd:string" , "Qd7^^xsd:string" , "Bxd5^^xsd:string" , "Nd5^^xsd:string" , "Qxd2^^xsd:string" , "Rb8^^xsd:string" , "Re3^^xsd:string" , "Qf3+^^xsd:string" , "Rb7^^xsd:string" , "g3^^xsd:string" , "exd4^^xsd:string" , "e3^^xsd:string" , "Rf3^^xsd:string" , "Ra5^^xsd:string" , "Bd5^^xsd:string" , "Qa5+^^xsd:string" , "a5^^xsd:string" , "Qxe6^^xsd:string" , "d5^^xsd:string" , "Bg2^^xsd:string" , "Nc3^^xsd:string" , "Bg7^^xsd:string" , "O-O^^xsd:string" , "Rfd1^^xsd:string" , "Qd3^^xsd:string" , "Qc7^^xsd:string" , "Bf3^^xsd:string" , "b6^^xsd:string" , "h4^^xsd:string" , "h5^^xsd:string" , "Be4^^xsd:string" , "Rd8^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamPYp50SB> .
+
+<http://purl.org/NET/rdfchess/id/cgrPYp50S>
+        a                       <http://purl.org/NET/rdfchess/chessonto:ChessGameReport> ;
+        rdfs:providesAgentRole  <http://purl.org/NET/rdfchess/id/rolPYp50S> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasPGNFile>
+                "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/rolPYp50S>
+        a       <http://purl.org/NET/rdfchess/chessonto:AuthorRole> , <http://purl.org/NET/rdfchess/chessonto:BlackPlayerRole> , <http://purl.org/NET/rdfchess/chessonto:WhitePlayerRole> ;
+        <http://purl.org/NET/rdfchess/chessonto:performedBy>
+                <http://purl.org/NET/rdfchess/id/agPYp50S> .
+
+<http://purl.org/NET/rdfchess/id/agPYp50S>
+        a       <http://purl.org/NET/rdfchess/chessonto:Agent> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasName>
+                "Khalifman, Alexander^^xsd:string" , "Karpov, Anatoly^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/gamPYp50>
+        a                       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        rdfs:providesAgentRole  <http://purl.org/NET/rdfchess/id/rolPYp50S> ;
+        <http://purl.org/NET/rdfchess/chessonto:atPlace>
+                <http://purl.org/NET/rdfchess/id/plaPYp50S> ;
+        <http://purl.org/NET/rdfchess/chessonto:atTime>
+                "1995.??.??^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamPYp50SB> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamPYp50SB> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamPYp50SB> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasOpening>
+                <http://purl.org/NET/rdfchess/id/opePYp50S> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrPYp50S> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasResult>
+                <http://purl.org/NET/rdfchess/id/resPYp50SB> ;
+        sem:subEventOf          <http://purl.org/NET/rdfchess/id/touPYp50> .
+
+<http://purl.org/NET/rdfchess/id/touPYp50>
+        a       <http://purl.org/NET/rdfchess/chessonto:ChessTournament> ;
+        <http://purl.org/NET/rdfchess/chessonto:atPlace>
+                <http://purl.org/NET/rdfchess/id/plaPYp50S> ;
+        <http://purl.org/NET/rdfchess/chessonto:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto:hasName>
+                "Linares^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/rolhgPYp50SBx>
+        a       <http://purl.org/NET/rdfchess/chessonto:ActingPlayerRole> ;
+        <http://purl.org/NET/rdfchess/chessonto:performedBy>
+                <http://purl.org/NET/rdfchess/id/agPYp50S> .
+
+<http://purl.org/NET/rdfchess/id/resPYp50SB>
+        a       <http://purl.org/NET/rdfchess/chessonto:ChessGameResult> ;
+        <http://purl.org/NET/rdfchess/chessonto:encodedAsSAN>
+                <1-0^^xsd:string> .
+
+<http://purl.org/NET/rdfchess/chessonto:ActingPlayerRole>
+        rdfs:subClassOf  <http://purl.org/NET/rdfchess/chessonto:AgentRole> .
+
+<http://purl.org/NET/rdfchess/id/opePYp50S>
+        a       <http://purl.org/NET/rdfchess/chessonto:ChessOpening> ;
+        <http://purl.org/NET/rdfchess/chessonto:hasECOCode>
+                <E60^^xsd:string> .
+
+<http://purl.org/NET/rdfchess/chessonto:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamPYp50> .
+
+<http://purl.org/NET/rdfchess/chessonto:WhitePlayerRole>
+        rdfs:subClassOf  <http://purl.org/NET/rdfchess/chessonto:AgentRole> ;
+        <http://purl.org/NET/rdfchess/chessonto:performedBy>
+                <http://purl.org/NET/rdfchess/id/agPYp50S> .
+
+<http://purl.org/NET/rdfchess/chessonto:BlackPlayerRole>
+        rdfs:subClassOf  <http://purl.org/NET/rdfchess/chessonto:AgentRole> ;
+        <http://purl.org/NET/rdfchess/chessonto:performedBy>
+                <http://purl.org/NET/rdfchess/id/agPYp50S> .

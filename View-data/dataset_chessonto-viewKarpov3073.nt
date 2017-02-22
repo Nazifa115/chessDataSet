@@ -1,0 +1,53 @@
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix chon:  <http://purl.org/NET/rdfchess/chessonto> .
+
+<http://purl.org/NET/rdfchess/id/gamAv2ML>
+        a       <http://purl.org/NET/rdfchess/ontology/ChessGame> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atChessTournament>
+                "Tal Memorial Blitz^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atPlaceNamed>
+                "Moscow RUS^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:atTime>
+                "null^^xsd:dateTime" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasBlackPlayer>
+                "Karjakin,Sergey^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasFirstHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamAv2MLdd> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamAv2MLdd> , <http://purl.org/NET/rdfchess/id/hmgamMvY1ici> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasLastHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamMvY1ici> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasOpenningECO>
+                "D11^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasReport>
+                <http://purl.org/NET/rdfchess/id/cgrMvY1ic> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasResultSAN>
+                "0-1^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasWhitePlayer>
+                "Karpov,Ana^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/chessonto-view:HalfMove>
+        sem:subEventOf  <http://purl.org/NET/rdfchess/id/gamAv2ML> .
+
+<http://purl.org/NET/rdfchess/id/cgrMvY1ic>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:ChessGameReport> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasAuthor>
+                "^^xsd:anyURI" , "^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamAv2MLdd>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "e3^^xsd:string" , "a6^^xsd:string" , "d4^^xsd:string" , "Nbd2^^xsd:string" , "Nf3^^xsd:string" , "c6^^xsd:string" , "Bd3^^xsd:string" , "Bg4^^xsd:string" , "d5^^xsd:string" , "c4^^xsd:string" , "Nf6^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamAv2MLdd> , <http://purl.org/NET/rdfchess/id/hmgamMvY1ici> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karpov,Ana^^xsd:string" , "Karjakin,Sergey^^xsd:string" .
+
+<http://purl.org/NET/rdfchess/id/hmgamMvY1ici>
+        a       <http://purl.org/NET/rdfchess/chessonto-view:HalfMove> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:hasSANRecord>
+                "Bxf3^^xsd:string" , "Rfd8^^xsd:string" , "Bf6^^xsd:string" , "h5^^xsd:string" , "Qb1^^xsd:string" , "Ne5^^xsd:string" , "cxd5^^xsd:string" , "Kg2^^xsd:string" , "N5f6^^xsd:string" , "Nbd7^^xsd:string" , "Rg1^^xsd:string" , "Rd7^^xsd:string" , "Qa5^^xsd:string" , "Nd5^^xsd:string" , "b3^^xsd:string" , "Nxd5^^xsd:string" , "Qb2^^xsd:string" , "Bxd4^^xsd:string" , "Bd4^^xsd:string" , "e5^^xsd:string" , "Bxb6^^xsd:string" , "Be7^^xsd:string" , "b6^^xsd:string" , "Bb2^^xsd:string" , "gxf3^^xsd:string" , "cxd4^^xsd:string" , "b4^^xsd:string" , "Rxd5^^xsd:string" , "Kh1^^xsd:string" , "Be2^^xsd:string" , "c5^^xsd:string" , "e6^^xsd:string" , "Ne4^^xsd:string" , "R8d7^^xsd:string" , "a3^^xsd:string" , "Bc5^^xsd:string" , "Bc3^^xsd:string" , "O-O^^xsd:string" , "Rc1^^xsd:string" , "Qh5^^xsd:string" , "Ng6^^xsd:string" , "Rd1^^xsd:string" , "Rad8^^xsd:string" , "Ng3^^xsd:string" , "Qh4^^xsd:string" ;
+        <http://purl.org/NET/rdfchess/chessonto-view:nextHalfMove>
+                <http://purl.org/NET/rdfchess/id/hmgamMvY1ici> ;
+        <http://purl.org/NET/rdfchess/chessonto-view:playedBy>
+                "Karjakin,Sergey^^xsd:string" , "Karpov,Ana^^xsd:string" .
